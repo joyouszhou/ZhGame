@@ -8,6 +8,6 @@
 
 #import "MenuViewController.h"
 
-@interface MyselfListViewController : MenuViewController
+@interface MyselfListViewController : UIViewController
 
 @end

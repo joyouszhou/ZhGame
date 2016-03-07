@@ -14,8 +14,11 @@
 #import "ZhTabBarController.h"
 #import "Zh5TableViewController.h"
 #import "ZhRootViewController.h"
+#import "MMDrawerController.h"
+
 
 @interface AppDelegate ()
+@property (nonatomic,strong) MMDrawerController * drawerController;
 
 @end
 
@@ -35,16 +38,45 @@
     Zh2ViewController * vc2 = [[Zh2ViewController alloc]init];
     Zh3ViewController * vc3 = [[Zh3ViewController alloc]init];
     Zh4ViewController * vc4 = [[Zh4ViewController alloc]init];
-    ZhRootViewController * nav1 = [[ZhRootViewController alloc]initWithRootViewController:vc1];
+    MyselfListViewController *vc5 = [[MyselfListViewController alloc] init];
+    
+    
+    ZhRootViewController * navigationController = [[ZhRootViewController alloc]initWithRootViewController:vc1];
+    ZhRootViewController * leftSideNavController = [[ZhRootViewController alloc]initWithRootViewController:vc5];
+
     UINavigationController * nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
     UINavigationController * nav3 = [[UINavigationController alloc]initWithRootViewController:vc3];
     
-    self.leftVc = [[MyselfListViewController alloc]initWithViewController:nav1];
+
+    [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
+    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
+    
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:navigationController
+                             leftDrawerViewController:leftSideNavController
+                             rightDrawerViewController:nil];
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+    [self.drawerController setMaximumRightDrawerWidth:200.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//         MMDrawerControllerDrawerVisualStateBlock block;
+//         block = [[MMExampleDrawerVisualStateManager sharedManager]
+//                  drawerVisualStateBlockForDrawerSide:drawerSide];
+//         if(block){
+//             block(drawerController, drawerSide, percentVisible);
+//         }
+     }];
+
+    
+    
     
     self.tabBar = [[ZhTabBarController alloc]initWithTabBarSelectedImages:selectedArray normalImages:array titles:titles];
     self.tabBar.showCenterItem = YES;
     self.tabBar.centerItemImage = [UIImage imageNamed:@"btn_release.png"];
-    self.tabBar.viewControllers = @[_leftVc,nav2,nav3,vc4];
+    self.tabBar.viewControllers = @[self.drawerController,nav2,nav3,vc4];
     self.tabBar.textColor = [UIColor redColor];
     [self.tabBar tabBarBadgeValue:500 item:2];
     [self.tabBar tabBarBadgeValue:3 item:1];

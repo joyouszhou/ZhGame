@@ -7,8 +7,9 @@
 //
 
 #import "Zh1ViewController.h"
-#include "Masonry.h"
-
+#import "Masonry.h"
+#import "MMDrawerBarButtonItem.h"
+#import "UIViewController+MMDrawerController.h"
 @interface Zh1ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,assign)CGFloat width;
 @property (nonatomic ,strong)NSArray *dataSource;
@@ -16,11 +17,25 @@
 
 @implementation Zh1ViewController
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self setRestorationIdentifier:@"MMExampleCenterControllerRestorationKey"];
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
+    MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
+    [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
+    
+    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
     _backTableView=[[UITableView alloc]init];
     _backTableView.delegate=self;
     _backTableView.dataSource=self;
@@ -39,16 +54,16 @@
     
     
 }
--(void)didTapNextButton
+-(void)leftDrawerButtonPress:(id)sender
 {
-    
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(tableView==_backTableView)
         return 1;
-    else return 5;
+    else return 1;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,8 +76,9 @@
     }
     //    cell.imageView.image = [UIImage imageNamed:@"back_sss.png"];
     _secondTableView=[[UIImageView alloc]init];
-    _secondTableView.image = [UIImage imageNamed:@"back_sss.png"];
-
+//    _secondTableView.image = [UIImage imageNamed:@"back_sss.png"];
+    _secondTableView.backgroundColor = [UIColor redColor];
+    
     [cell addSubview:_secondTableView];
     [_secondTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(cell.mas_top);

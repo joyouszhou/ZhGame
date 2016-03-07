@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B74D1C8D8CB200501747 /* MMDrawerBarButtonItem.m */; };
+		FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7501C8D8CB200501747 /* MMDrawerController.m */; };
+		FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */; };
+		FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
@@ -34,8 +38,6 @@
 		FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8021C8D6DF5000C8119 /* Zh3ViewController.m */; };
 		FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */; };
 		FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */; };
-		FBA7F8391C8D6DF5000C8119 /* ZhUCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */; };
-		FBA7F83A1C8D6DF5000C8119 /* ZhUCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */; };
 		FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F80D1C8D6DF5000C8119 /* MASCompositeConstraint.m */; };
 		FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8101C8D6DF5000C8119 /* MASConstraint.m */; };
 		FBA7F83D1C8D6DF5000C8119 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8121C8D6DF5000C8119 /* MASConstraintMaker.m */; };
@@ -71,6 +73,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB07B74C1C8D8CB200501747 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		FB07B74D1C8D8CB200501747 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		FB07B74E1C8D8CB200501747 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		FB07B74F1C8D8CB200501747 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		FB07B7501C8D8CB200501747 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		FB07B7511C8D8CB200501747 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		FB07B7531C8D8CB200501747 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,10 +123,6 @@
 		FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh4ViewController.m; sourceTree = "<group>"; };
 		FBA7F8051C8D6DF5000C8119 /* Zh5TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh5TableViewController.h; sourceTree = "<group>"; };
 		FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh5TableViewController.m; sourceTree = "<group>"; };
-		FBA7F8071C8D6DF5000C8119 /* ZhUCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUCView.h; sourceTree = "<group>"; };
-		FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUCView.m; sourceTree = "<group>"; };
-		FBA7F8091C8D6DF5000C8119 /* ZhUCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUCViewController.h; sourceTree = "<group>"; };
-		FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUCViewController.m; sourceTree = "<group>"; };
 		FBA7F80C1C8D6DF5000C8119 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FBA7F80D1C8D6DF5000C8119 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		FBA7F80E1C8D6DF5000C8119 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -178,9 +185,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB07B74A1C8D8CB200501747 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				FB07B74B1C8D8CB200501747 /* MMDrawerController */,
+			);
+			name = ThirdLib;
+			path = ZhGame/ThirdLib;
+			sourceTree = "<group>";
+		};
+		FB07B74B1C8D8CB200501747 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				FB07B74C1C8D8CB200501747 /* MMDrawerBarButtonItem.h */,
+				FB07B74D1C8D8CB200501747 /* MMDrawerBarButtonItem.m */,
+				FB07B74E1C8D8CB200501747 /* MMDrawerController+Subclass.h */,
+				FB07B74F1C8D8CB200501747 /* MMDrawerController.h */,
+				FB07B7501C8D8CB200501747 /* MMDrawerController.m */,
+				FB07B7511C8D8CB200501747 /* MMDrawerVisualState.h */,
+				FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */,
+				FB07B7531C8D8CB200501747 /* UIViewController+MMDrawerController.h */,
+				FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
 		FBA7F79E1C8D6DAB000C8119 = {
 			isa = PBXGroup;
 			children = (
+				FB07B74A1C8D8CB200501747 /* ThirdLib */,
 				FBA7F7F81C8D6DF5000C8119 /* UI */,
 				FBA7F7DD1C8D6DED000C8119 /* images */,
 				FBA7F7A91C8D6DAB000C8119 /* ZhGame */,
@@ -299,10 +332,6 @@
 				FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */,
 				FBA7F8051C8D6DF5000C8119 /* Zh5TableViewController.h */,
 				FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */,
-				FBA7F8071C8D6DF5000C8119 /* ZhUCView.h */,
-				FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */,
-				FBA7F8091C8D6DF5000C8119 /* ZhUCViewController.h */,
-				FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */,
 			);
 			path = Fragement;
 			sourceTree = "<group>";
@@ -524,7 +553,6 @@
 				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
-				FBA7F83A1C8D6DF5000C8119 /* ZhUCViewController.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
@@ -540,11 +568,14 @@
 				FBA7F8341C8D6DF5000C8119 /* Zh1ViewController.m in Sources */,
 				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
-				FBA7F8391C8D6DF5000C8119 /* ZhUCView.m in Sources */,
+				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
 				FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */,
+				FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */,
 				FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */,
+				FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */,
 				FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */,
+				FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */,
 				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
 				FBA7F8461C8D6DF5000C8119 /* MenuViewController.m in Sources */,
 			);

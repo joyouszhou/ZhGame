@@ -31,12 +31,14 @@
 
 @implementation MyselfListViewController
 
+
 - (void)viewDidLoad {
     
     self.view.backgroundColor = [UIColor whiteColor];
 
     _menuArray = [NSArray new];
     _picArray = [NSArray new];
+
     
     [self setupUI];
     
@@ -52,7 +54,7 @@
     _menuTableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     _menuTableView.delegate = self;
     _menuTableView.dataSource = self;
-    _menuTableView.backgroundColor = [UIColor grayColor];
+//    _menuTableView.backgroundColor = [UIColor grayColor];
     _menuTableView.separatorColor = [UIColor colorWithRed:74 / 256.0 green:74 / 256.0 blue:74 / 256.0 alpha:1];
     [self.view addSubview:_menuTableView];
     
@@ -159,7 +161,7 @@
     cell.textLabel.text = _menuArray[indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:16];
     cell.imageView.image = [UIImage imageNamed:_picArray[indexPath.row]];
-    cell.backgroundColor = [UIColor colorWithRed:74 / 256.0 green:74 / 256.0 blue:74 / 256.0 alpha:1];
+//    cell.backgroundColor = [UIColor colorWithRed:74 / 256.0 green:74 / 256.0 blue:74 / 256.0 alpha:1];
     
     return cell;
 }

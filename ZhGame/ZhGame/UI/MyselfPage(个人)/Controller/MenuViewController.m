@@ -17,6 +17,16 @@
 
 @implementation MenuViewController
 
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 - (instancetype)initWithViewController:(UIViewController *)vc {
     
     self = [super init];
@@ -40,7 +50,7 @@
     // 将外部传值的MainVC的跟视图添加到当前MenuVC的跟视图上
     [self.view addSubview:self.mainViewController.view];
     
-    [self.view setBackgroundColor:[UIColor magentaColor]];
+//    [self.view setBackgroundColor:[UIColor magentaColor]];
     
     // 屏幕边缘滑动手势识别器
     UIScreenEdgePanGestureRecognizer * screenEdgePan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(viewSlid:)];
