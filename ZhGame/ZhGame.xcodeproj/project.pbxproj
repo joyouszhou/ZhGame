@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
+		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
+		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
+		FBA7F7B51C8D6DAB000C8119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B31C8D6DAB000C8119 /* Main.storyboard */; };
+		FBA7F7B71C8D6DAB000C8119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B61C8D6DAB000C8119 /* Assets.xcassets */; };
+		FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B81C8D6DAB000C8119 /* LaunchScreen.storyboard */; };
+		FBA7F7C51C8D6DAB000C8119 /* ZhGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */; };
+		FBA7F7D01C8D6DAB000C8119 /* ZhGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */; };
+		FBA7F7EB1C8D6DED000C8119 /* addMore.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7DE1C8D6DED000C8119 /* addMore.png */; };
+		FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */; };
+		FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */; };
+		FBA7F7EE1C8D6DED000C8119 /* choose.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E11C8D6DED000C8119 /* choose.png */; };
+		FBA7F7EF1C8D6DED000C8119 /* icon_128.ico in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E21C8D6DED000C8119 /* icon_128.ico */; };
+		FBA7F7F01C8D6DED000C8119 /* tab_buddy_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */; };
+		FBA7F7F11C8D6DED000C8119 /* tab_buddy_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */; };
+		FBA7F7F21C8D6DED000C8119 /* tab_me_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */; };
+		FBA7F7F31C8D6DED000C8119 /* tab_me_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E61C8D6DED000C8119 /* tab_me_press@2x.png */; };
+		FBA7F7F41C8D6DED000C8119 /* tab_qworld_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E71C8D6DED000C8119 /* tab_qworld_nor@2x.png */; };
+		FBA7F7F51C8D6DED000C8119 /* tab_qworld_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E81C8D6DED000C8119 /* tab_qworld_press@2x.png */; };
+		FBA7F7F61C8D6DED000C8119 /* tab_recent_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E91C8D6DED000C8119 /* tab_recent_nor@2x.png */; };
+		FBA7F7F71C8D6DED000C8119 /* tab_recent_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7EA1C8D6DED000C8119 /* tab_recent_press@2x.png */; };
+		FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7FB1C8D6DF5000C8119 /* ZhTabBarButton.m */; };
+		FBA7F8341C8D6DF5000C8119 /* Zh1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7FE1C8D6DF5000C8119 /* Zh1ViewController.m */; };
+		FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8001C8D6DF5000C8119 /* Zh2ViewController.m */; };
+		FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8021C8D6DF5000C8119 /* Zh3ViewController.m */; };
+		FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */; };
+		FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */; };
+		FBA7F8391C8D6DF5000C8119 /* ZhUCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */; };
+		FBA7F83A1C8D6DF5000C8119 /* ZhUCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */; };
+		FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F80D1C8D6DF5000C8119 /* MASCompositeConstraint.m */; };
+		FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8101C8D6DF5000C8119 /* MASConstraint.m */; };
+		FBA7F83D1C8D6DF5000C8119 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8121C8D6DF5000C8119 /* MASConstraintMaker.m */; };
+		FBA7F83E1C8D6DF5000C8119 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8141C8D6DF5000C8119 /* MASLayoutConstraint.m */; };
+		FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8181C8D6DF5000C8119 /* MASViewAttribute.m */; };
+		FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F81A1C8D6DF5000C8119 /* MASViewConstraint.m */; };
+		FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F81C1C8D6DF5000C8119 /* NSArray+MASAdditions.m */; };
+		FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F81F1C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8211C8D6DF5000C8119 /* View+MASAdditions.m */; };
+		FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */; };
+		FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */; };
+		FBA7F8461C8D6DF5000C8119 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */; };
+		FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */; };
+		FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */; };
+		FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA7F7C11C8D6DAB000C8119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA7F79F1C8D6DAB000C8119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA7F7A61C8D6DAB000C8119;
+			remoteInfo = ZhGame;
+		};
+		FBA7F7CC1C8D6DAB000C8119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA7F79F1C8D6DAB000C8119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA7F7A61C8D6DAB000C8119;
+			remoteInfo = ZhGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA7F7B01C8D6DAB000C8119 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBA7F7B11C8D6DAB000C8119 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBA7F7B41C8D6DAB000C8119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBA7F7B61C8D6DAB000C8119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBA7F7B91C8D6DAB000C8119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBA7F7BB1C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA7F7C01C8D6DAB000C8119 /* ZhGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhGameTests.m; sourceTree = "<group>"; };
+		FBA7F7C61C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA7F7CB1C8D6DAB000C8119 /* ZhGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhGameUITests.m; sourceTree = "<group>"; };
+		FBA7F7D11C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA7F7DE1C8D6DED000C8119 /* addMore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addMore.png; sourceTree = "<group>"; };
+		FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@3x.png"; sourceTree = "<group>"; };
+		FBA7F7E11C8D6DED000C8119 /* choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose.png; sourceTree = "<group>"; };
+		FBA7F7E21C8D6DED000C8119 /* icon_128.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_128.ico; sourceTree = "<group>"; };
+		FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_nor@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_press@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_me_nor@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E61C8D6DED000C8119 /* tab_me_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_me_press@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E71C8D6DED000C8119 /* tab_qworld_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_qworld_nor@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E81C8D6DED000C8119 /* tab_qworld_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_qworld_press@2x.png"; sourceTree = "<group>"; };
+		FBA7F7E91C8D6DED000C8119 /* tab_recent_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_nor@2x.png"; sourceTree = "<group>"; };
+		FBA7F7EA1C8D6DED000C8119 /* tab_recent_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_recent_press@2x.png"; sourceTree = "<group>"; };
+		FBA7F7FA1C8D6DF5000C8119 /* ZhTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarButton.h; sourceTree = "<group>"; };
+		FBA7F7FB1C8D6DF5000C8119 /* ZhTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarButton.m; sourceTree = "<group>"; };
+		FBA7F7FD1C8D6DF5000C8119 /* Zh1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh1ViewController.h; sourceTree = "<group>"; };
+		FBA7F7FE1C8D6DF5000C8119 /* Zh1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh1ViewController.m; sourceTree = "<group>"; };
+		FBA7F7FF1C8D6DF5000C8119 /* Zh2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh2ViewController.h; sourceTree = "<group>"; };
+		FBA7F8001C8D6DF5000C8119 /* Zh2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh2ViewController.m; sourceTree = "<group>"; };
+		FBA7F8011C8D6DF5000C8119 /* Zh3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh3ViewController.h; sourceTree = "<group>"; };
+		FBA7F8021C8D6DF5000C8119 /* Zh3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh3ViewController.m; sourceTree = "<group>"; };
+		FBA7F8031C8D6DF5000C8119 /* Zh4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh4ViewController.h; sourceTree = "<group>"; };
+		FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh4ViewController.m; sourceTree = "<group>"; };
+		FBA7F8051C8D6DF5000C8119 /* Zh5TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zh5TableViewController.h; sourceTree = "<group>"; };
+		FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zh5TableViewController.m; sourceTree = "<group>"; };
+		FBA7F8071C8D6DF5000C8119 /* ZhUCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUCView.h; sourceTree = "<group>"; };
+		FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUCView.m; sourceTree = "<group>"; };
+		FBA7F8091C8D6DF5000C8119 /* ZhUCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUCViewController.h; sourceTree = "<group>"; };
+		FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUCViewController.m; sourceTree = "<group>"; };
+		FBA7F80C1C8D6DF5000C8119 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		FBA7F80D1C8D6DF5000C8119 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		FBA7F80E1C8D6DF5000C8119 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		FBA7F80F1C8D6DF5000C8119 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		FBA7F8101C8D6DF5000C8119 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		FBA7F8111C8D6DF5000C8119 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		FBA7F8121C8D6DF5000C8119 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		FBA7F8131C8D6DF5000C8119 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		FBA7F8141C8D6DF5000C8119 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		FBA7F8151C8D6DF5000C8119 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		FBA7F8161C8D6DF5000C8119 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		FBA7F8171C8D6DF5000C8119 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		FBA7F8181C8D6DF5000C8119 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		FBA7F8191C8D6DF5000C8119 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		FBA7F81A1C8D6DF5000C8119 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		FBA7F81B1C8D6DF5000C8119 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		FBA7F81C1C8D6DF5000C8119 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		FBA7F81D1C8D6DF5000C8119 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		FBA7F81E1C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		FBA7F81F1C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		FBA7F8201C8D6DF5000C8119 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		FBA7F8211C8D6DF5000C8119 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		FBA7F8221C8D6DF5000C8119 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		FBA7F8231C8D6DF5000C8119 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		FBA7F8261C8D6DF5000C8119 /* ZhRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRootViewController.h; sourceTree = "<group>"; };
+		FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRootViewController.m; sourceTree = "<group>"; };
+		FBA7F82A1C8D6DF5000C8119 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfListViewController.h; sourceTree = "<group>"; };
+		FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfListViewController.m; sourceTree = "<group>"; };
+		FBA7F82F1C8D6DF5000C8119 /* ZhTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarController.h; sourceTree = "<group>"; };
+		FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarController.m; sourceTree = "<group>"; };
+		FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarView.h; sourceTree = "<group>"; };
+		FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA7F7A41C8D6DAB000C8119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7BD1C8D6DAB000C8119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7C81C8D6DAB000C8119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA7F79E1C8D6DAB000C8119 = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7F81C8D6DF5000C8119 /* UI */,
+				FBA7F7DD1C8D6DED000C8119 /* images */,
+				FBA7F7A91C8D6DAB000C8119 /* ZhGame */,
+				FBA7F7C31C8D6DAB000C8119 /* ZhGameTests */,
+				FBA7F7CE1C8D6DAB000C8119 /* ZhGameUITests */,
+				FBA7F7A81C8D6DAB000C8119 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA7F7A81C8D6DAB000C8119 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */,
+				FBA7F7C01C8D6DAB000C8119 /* ZhGameTests.xctest */,
+				FBA7F7CB1C8D6DAB000C8119 /* ZhGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA7F7A91C8D6DAB000C8119 /* ZhGame */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */,
+				FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */,
+				FBA7F7B01C8D6DAB000C8119 /* ViewController.h */,
+				FBA7F7B11C8D6DAB000C8119 /* ViewController.m */,
+				FBA7F7B31C8D6DAB000C8119 /* Main.storyboard */,
+				FBA7F7B61C8D6DAB000C8119 /* Assets.xcassets */,
+				FBA7F7B81C8D6DAB000C8119 /* LaunchScreen.storyboard */,
+				FBA7F7BB1C8D6DAB000C8119 /* Info.plist */,
+				FBA7F7AA1C8D6DAB000C8119 /* Supporting Files */,
+			);
+			path = ZhGame;
+			sourceTree = "<group>";
+		};
+		FBA7F7AA1C8D6DAB000C8119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7AB1C8D6DAB000C8119 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA7F7C31C8D6DAB000C8119 /* ZhGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */,
+				FBA7F7C61C8D6DAB000C8119 /* Info.plist */,
+			);
+			path = ZhGameTests;
+			sourceTree = "<group>";
+		};
+		FBA7F7CE1C8D6DAB000C8119 /* ZhGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */,
+				FBA7F7D11C8D6DAB000C8119 /* Info.plist */,
+			);
+			path = ZhGameUITests;
+			sourceTree = "<group>";
+		};
+		FBA7F7DD1C8D6DED000C8119 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7DE1C8D6DED000C8119 /* addMore.png */,
+				FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */,
+				FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */,
+				FBA7F7E11C8D6DED000C8119 /* choose.png */,
+				FBA7F7E21C8D6DED000C8119 /* icon_128.ico */,
+				FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */,
+				FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */,
+				FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */,
+				FBA7F7E61C8D6DED000C8119 /* tab_me_press@2x.png */,
+				FBA7F7E71C8D6DED000C8119 /* tab_qworld_nor@2x.png */,
+				FBA7F7E81C8D6DED000C8119 /* tab_qworld_press@2x.png */,
+				FBA7F7E91C8D6DED000C8119 /* tab_recent_nor@2x.png */,
+				FBA7F7EA1C8D6DED000C8119 /* tab_recent_press@2x.png */,
+			);
+			name = images;
+			path = ZhGame/images;
+			sourceTree = "<group>";
+		};
+		FBA7F7F81C8D6DF5000C8119 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7F91C8D6DF5000C8119 /* Button */,
+				FBA7F7FC1C8D6DF5000C8119 /* Fragement */,
+				FBA7F80B1C8D6DF5000C8119 /* Masonry */,
+				FBA7F8251C8D6DF5000C8119 /* Menu */,
+				FBA7F8281C8D6DF5000C8119 /* MyselfPage(个人) */,
+				FBA7F82E1C8D6DF5000C8119 /* TabBar */,
+			);
+			name = UI;
+			path = ZhGame/UI;
+			sourceTree = "<group>";
+		};
+		FBA7F7F91C8D6DF5000C8119 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7FA1C8D6DF5000C8119 /* ZhTabBarButton.h */,
+				FBA7F7FB1C8D6DF5000C8119 /* ZhTabBarButton.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		FBA7F7FC1C8D6DF5000C8119 /* Fragement */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F7FD1C8D6DF5000C8119 /* Zh1ViewController.h */,
+				FBA7F7FE1C8D6DF5000C8119 /* Zh1ViewController.m */,
+				FBA7F7FF1C8D6DF5000C8119 /* Zh2ViewController.h */,
+				FBA7F8001C8D6DF5000C8119 /* Zh2ViewController.m */,
+				FBA7F8011C8D6DF5000C8119 /* Zh3ViewController.h */,
+				FBA7F8021C8D6DF5000C8119 /* Zh3ViewController.m */,
+				FBA7F8031C8D6DF5000C8119 /* Zh4ViewController.h */,
+				FBA7F8041C8D6DF5000C8119 /* Zh4ViewController.m */,
+				FBA7F8051C8D6DF5000C8119 /* Zh5TableViewController.h */,
+				FBA7F8061C8D6DF5000C8119 /* Zh5TableViewController.m */,
+				FBA7F8071C8D6DF5000C8119 /* ZhUCView.h */,
+				FBA7F8081C8D6DF5000C8119 /* ZhUCView.m */,
+				FBA7F8091C8D6DF5000C8119 /* ZhUCViewController.h */,
+				FBA7F80A1C8D6DF5000C8119 /* ZhUCViewController.m */,
+			);
+			path = Fragement;
+			sourceTree = "<group>";
+		};
+		FBA7F80B1C8D6DF5000C8119 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F80C1C8D6DF5000C8119 /* MASCompositeConstraint.h */,
+				FBA7F80D1C8D6DF5000C8119 /* MASCompositeConstraint.m */,
+				FBA7F80E1C8D6DF5000C8119 /* MASConstraint+Private.h */,
+				FBA7F80F1C8D6DF5000C8119 /* MASConstraint.h */,
+				FBA7F8101C8D6DF5000C8119 /* MASConstraint.m */,
+				FBA7F8111C8D6DF5000C8119 /* MASConstraintMaker.h */,
+				FBA7F8121C8D6DF5000C8119 /* MASConstraintMaker.m */,
+				FBA7F8131C8D6DF5000C8119 /* MASLayoutConstraint.h */,
+				FBA7F8141C8D6DF5000C8119 /* MASLayoutConstraint.m */,
+				FBA7F8151C8D6DF5000C8119 /* Masonry.h */,
+				FBA7F8161C8D6DF5000C8119 /* MASUtilities.h */,
+				FBA7F8171C8D6DF5000C8119 /* MASViewAttribute.h */,
+				FBA7F8181C8D6DF5000C8119 /* MASViewAttribute.m */,
+				FBA7F8191C8D6DF5000C8119 /* MASViewConstraint.h */,
+				FBA7F81A1C8D6DF5000C8119 /* MASViewConstraint.m */,
+				FBA7F81B1C8D6DF5000C8119 /* NSArray+MASAdditions.h */,
+				FBA7F81C1C8D6DF5000C8119 /* NSArray+MASAdditions.m */,
+				FBA7F81D1C8D6DF5000C8119 /* NSArray+MASShorthandAdditions.h */,
+				FBA7F81E1C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				FBA7F81F1C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				FBA7F8201C8D6DF5000C8119 /* View+MASAdditions.h */,
+				FBA7F8211C8D6DF5000C8119 /* View+MASAdditions.m */,
+				FBA7F8221C8D6DF5000C8119 /* View+MASShorthandAdditions.h */,
+				FBA7F8231C8D6DF5000C8119 /* ViewController+MASAdditions.h */,
+				FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		FBA7F8251C8D6DF5000C8119 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F8261C8D6DF5000C8119 /* ZhRootViewController.h */,
+				FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FBA7F8281C8D6DF5000C8119 /* MyselfPage(个人) */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F8291C8D6DF5000C8119 /* Controller */,
+			);
+			path = "MyselfPage(个人)";
+			sourceTree = "<group>";
+		};
+		FBA7F8291C8D6DF5000C8119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F82A1C8D6DF5000C8119 /* MenuViewController.h */,
+				FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */,
+				FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */,
+				FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBA7F82E1C8D6DF5000C8119 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7F82F1C8D6DF5000C8119 /* ZhTabBarController.h */,
+				FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */,
+				FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */,
+				FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA7F7A61C8D6DAB000C8119 /* ZhGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA7F7D41C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGame" */;
+			buildPhases = (
+				FBA7F7A31C8D6DAB000C8119 /* Sources */,
+				FBA7F7A41C8D6DAB000C8119 /* Frameworks */,
+				FBA7F7A51C8D6DAB000C8119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhGame;
+			productName = ZhGame;
+			productReference = FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA7F7BF1C8D6DAB000C8119 /* ZhGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA7F7D71C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGameTests" */;
+			buildPhases = (
+				FBA7F7BC1C8D6DAB000C8119 /* Sources */,
+				FBA7F7BD1C8D6DAB000C8119 /* Frameworks */,
+				FBA7F7BE1C8D6DAB000C8119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA7F7C21C8D6DAB000C8119 /* PBXTargetDependency */,
+			);
+			name = ZhGameTests;
+			productName = ZhGameTests;
+			productReference = FBA7F7C01C8D6DAB000C8119 /* ZhGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBA7F7CA1C8D6DAB000C8119 /* ZhGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA7F7DA1C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGameUITests" */;
+			buildPhases = (
+				FBA7F7C71C8D6DAB000C8119 /* Sources */,
+				FBA7F7C81C8D6DAB000C8119 /* Frameworks */,
+				FBA7F7C91C8D6DAB000C8119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA7F7CD1C8D6DAB000C8119 /* PBXTargetDependency */,
+			);
+			name = ZhGameUITests;
+			productName = ZhGameUITests;
+			productReference = FBA7F7CB1C8D6DAB000C8119 /* ZhGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA7F79F1C8D6DAB000C8119 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zhouhuan;
+				TargetAttributes = {
+					FBA7F7A61C8D6DAB000C8119 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FBA7F7BF1C8D6DAB000C8119 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBA7F7A61C8D6DAB000C8119;
+					};
+					FBA7F7CA1C8D6DAB000C8119 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FBA7F7A61C8D6DAB000C8119;
+					};
+				};
+			};
+			buildConfigurationList = FBA7F7A21C8D6DAB000C8119 /* Build configuration list for PBXProject "ZhGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA7F79E1C8D6DAB000C8119;
+			productRefGroup = FBA7F7A81C8D6DAB000C8119 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA7F7A61C8D6DAB000C8119 /* ZhGame */,
+				FBA7F7BF1C8D6DAB000C8119 /* ZhGameTests */,
+				FBA7F7CA1C8D6DAB000C8119 /* ZhGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA7F7A51C8D6DAB000C8119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA7F7F31C8D6DED000C8119 /* tab_me_press@2x.png in Resources */,
+				FBA7F7EF1C8D6DED000C8119 /* icon_128.ico in Resources */,
+				FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */,
+				FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */,
+				FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */,
+				FBA7F7F61C8D6DED000C8119 /* tab_recent_nor@2x.png in Resources */,
+				FBA7F7F51C8D6DED000C8119 /* tab_qworld_press@2x.png in Resources */,
+				FBA7F7F71C8D6DED000C8119 /* tab_recent_press@2x.png in Resources */,
+				FBA7F7EE1C8D6DED000C8119 /* choose.png in Resources */,
+				FBA7F7F01C8D6DED000C8119 /* tab_buddy_nor@2x.png in Resources */,
+				FBA7F7B71C8D6DAB000C8119 /* Assets.xcassets in Resources */,
+				FBA7F7F41C8D6DED000C8119 /* tab_qworld_nor@2x.png in Resources */,
+				FBA7F7EB1C8D6DED000C8119 /* addMore.png in Resources */,
+				FBA7F7B51C8D6DAB000C8119 /* Main.storyboard in Resources */,
+				FBA7F7F21C8D6DED000C8119 /* tab_me_nor@2x.png in Resources */,
+				FBA7F7F11C8D6DED000C8119 /* tab_buddy_press@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7BE1C8D6DAB000C8119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7C91C8D6DAB000C8119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA7F7A31C8D6DAB000C8119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
+				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
+				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
+				FBA7F83A1C8D6DF5000C8119 /* ZhUCViewController.m in Sources */,
+				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
+				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
+				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
+				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
+				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
+				FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */,
+				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
+				FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */,
+				FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				FBA7F83E1C8D6DF5000C8119 /* MASLayoutConstraint.m in Sources */,
+				FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */,
+				FBA7F83D1C8D6DF5000C8119 /* MASConstraintMaker.m in Sources */,
+				FBA7F8341C8D6DF5000C8119 /* Zh1ViewController.m in Sources */,
+				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
+				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
+				FBA7F8391C8D6DF5000C8119 /* ZhUCView.m in Sources */,
+				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
+				FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */,
+				FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */,
+				FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */,
+				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
+				FBA7F8461C8D6DF5000C8119 /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7BC1C8D6DAB000C8119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA7F7C51C8D6DAB000C8119 /* ZhGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA7F7C71C8D6DAB000C8119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA7F7D01C8D6DAB000C8119 /* ZhGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA7F7C21C8D6DAB000C8119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA7F7A61C8D6DAB000C8119 /* ZhGame */;
+			targetProxy = FBA7F7C11C8D6DAB000C8119 /* PBXContainerItemProxy */;
+		};
+		FBA7F7CD1C8D6DAB000C8119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA7F7A61C8D6DAB000C8119 /* ZhGame */;
+			targetProxy = FBA7F7CC1C8D6DAB000C8119 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA7F7B31C8D6DAB000C8119 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA7F7B41C8D6DAB000C8119 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBA7F7B81C8D6DAB000C8119 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA7F7B91C8D6DAB000C8119 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA7F7D21C8D6DAB000C8119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA7F7D31C8D6DAB000C8119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA7F7D51C8D6DAB000C8119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZhGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.ZhGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBA7F7D61C8D6DAB000C8119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZhGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.ZhGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBA7F7D81C8D6DAB000C8119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZhGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.sdk.ZhGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhGame.app/ZhGame";
+			};
+			name = Debug;
+		};
+		FBA7F7D91C8D6DAB000C8119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZhGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.sdk.ZhGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhGame.app/ZhGame";
+			};
+			name = Release;
+		};
+		FBA7F7DB1C8D6DAB000C8119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZhGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.sdk.ZhGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZhGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FBA7F7DC1C8D6DAB000C8119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZhGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.sdk.ZhGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZhGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA7F7A21C8D6DAB000C8119 /* Build configuration list for PBXProject "ZhGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA7F7D21C8D6DAB000C8119 /* Debug */,
+				FBA7F7D31C8D6DAB000C8119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA7F7D41C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA7F7D51C8D6DAB000C8119 /* Debug */,
+				FBA7F7D61C8D6DAB000C8119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA7F7D71C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA7F7D81C8D6DAB000C8119 /* Debug */,
+				FBA7F7D91C8D6DAB000C8119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA7F7DA1C8D6DAB000C8119 /* Build configuration list for PBXNativeTarget "ZhGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA7F7DB1C8D6DAB000C8119 /* Debug */,
+				FBA7F7DC1C8D6DAB000C8119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA7F79F1C8D6DAB000C8119 /* Project object */;
+}
