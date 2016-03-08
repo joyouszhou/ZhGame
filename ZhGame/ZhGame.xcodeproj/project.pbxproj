@@ -11,6 +11,14 @@
 		FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7501C8D8CB200501747 /* MMDrawerController.m */; };
 		FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */; };
 		FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */; };
+		FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E3C1C8E77E5009F7681 /* LHCustomModalTransition.m */; };
+		FB206E3F1C8E80C7009F7681 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E3E1C8E80C7009F7681 /* logo.png */; };
+		FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E531C8EA92C009F7681 /* login_regner_phone.png */; };
+		FB206E561C8EA92C009F7681 /* login_regner_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E541C8EA92C009F7681 /* login_regner_phone@2x.png */; };
+		FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */; };
+		FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */; };
+		FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */; };
+		FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
@@ -23,7 +31,6 @@
 		FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */; };
 		FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */; };
 		FBA7F7EE1C8D6DED000C8119 /* choose.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E11C8D6DED000C8119 /* choose.png */; };
-		FBA7F7EF1C8D6DED000C8119 /* icon_128.ico in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E21C8D6DED000C8119 /* icon_128.ico */; };
 		FBA7F7F01C8D6DED000C8119 /* tab_buddy_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */; };
 		FBA7F7F11C8D6DED000C8119 /* tab_buddy_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */; };
 		FBA7F7F21C8D6DED000C8119 /* tab_me_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */; };
@@ -49,7 +56,6 @@
 		FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8211C8D6DF5000C8119 /* View+MASAdditions.m */; };
 		FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */; };
 		FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */; };
-		FBA7F8461C8D6DF5000C8119 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */; };
 		FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */; };
 		FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */; };
 		FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */; };
@@ -82,6 +88,17 @@
 		FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		FB07B7531C8D8CB200501747 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		FB206E3B1C8E77E5009F7681 /* LHCustomModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCustomModalTransition.h; sourceTree = "<group>"; };
+		FB206E3C1C8E77E5009F7681 /* LHCustomModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCustomModalTransition.m; sourceTree = "<group>"; };
+		FB206E3E1C8E80C7009F7681 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		FB206E531C8EA92C009F7681 /* login_regner_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_regner_phone.png; sourceTree = "<group>"; };
+		FB206E541C8EA92C009F7681 /* login_regner_phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_regner_phone@2x.png"; sourceTree = "<group>"; };
+		FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pd_sdk_dialog_pwd.png; sourceTree = "<group>"; };
+		FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pd_sdk_dialog_pwd@2x.png"; sourceTree = "<group>"; };
+		FB206E5F1C8EBB4B009F7681 /* ZhAuthUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhAuthUtilViewController.h; sourceTree = "<group>"; };
+		FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhAuthUtilViewController.m; sourceTree = "<group>"; };
+		FB206E671C8EC01B009F7681 /* ZhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhLoginViewController.h; sourceTree = "<group>"; };
+		FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhLoginViewController.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,7 +119,6 @@
 		FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@2x.png"; sourceTree = "<group>"; };
 		FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@3x.png"; sourceTree = "<group>"; };
 		FBA7F7E11C8D6DED000C8119 /* choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose.png; sourceTree = "<group>"; };
-		FBA7F7E21C8D6DED000C8119 /* icon_128.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icon_128.ico; sourceTree = "<group>"; };
 		FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_nor@2x.png"; sourceTree = "<group>"; };
 		FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_buddy_press@2x.png"; sourceTree = "<group>"; };
 		FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_me_nor@2x.png"; sourceTree = "<group>"; };
@@ -150,8 +166,6 @@
 		FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		FBA7F8261C8D6DF5000C8119 /* ZhRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRootViewController.h; sourceTree = "<group>"; };
 		FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRootViewController.m; sourceTree = "<group>"; };
-		FBA7F82A1C8D6DF5000C8119 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfListViewController.h; sourceTree = "<group>"; };
 		FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfListViewController.m; sourceTree = "<group>"; };
 		FBA7F82F1C8D6DF5000C8119 /* ZhTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarController.h; sourceTree = "<group>"; };
@@ -188,6 +202,7 @@
 		FB07B74A1C8D8CB200501747 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FB206E3A1C8E77E5009F7681 /* LHDragableModalTransition */,
 				FB07B74B1C8D8CB200501747 /* MMDrawerController */,
 			);
 			name = ThirdLib;
@@ -208,6 +223,42 @@
 				FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */,
 			);
 			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		FB206E361C8E7358009F7681 /* Auth(登陆|注册) */ = {
+			isa = PBXGroup;
+			children = (
+				FB206E661C8EC01B009F7681 /* Login(登陆界面) */,
+				FB206E5E1C8EBB4B009F7681 /* Utils(基础控件类) */,
+			);
+			path = "Auth(登陆|注册)";
+			sourceTree = "<group>";
+		};
+		FB206E3A1C8E77E5009F7681 /* LHDragableModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				FB206E3B1C8E77E5009F7681 /* LHCustomModalTransition.h */,
+				FB206E3C1C8E77E5009F7681 /* LHCustomModalTransition.m */,
+			);
+			path = LHDragableModalTransition;
+			sourceTree = "<group>";
+		};
+		FB206E5E1C8EBB4B009F7681 /* Utils(基础控件类) */ = {
+			isa = PBXGroup;
+			children = (
+				FB206E5F1C8EBB4B009F7681 /* ZhAuthUtilViewController.h */,
+				FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */,
+			);
+			path = "Utils(基础控件类)";
+			sourceTree = "<group>";
+		};
+		FB206E661C8EC01B009F7681 /* Login(登陆界面) */ = {
+			isa = PBXGroup;
+			children = (
+				FB206E671C8EC01B009F7681 /* ZhLoginViewController.h */,
+				FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */,
+			);
+			path = "Login(登陆界面)";
 			sourceTree = "<group>";
 		};
 		FBA7F79E1C8D6DAB000C8119 = {
@@ -278,11 +329,15 @@
 		FBA7F7DD1C8D6DED000C8119 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */,
+				FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */,
+				FB206E531C8EA92C009F7681 /* login_regner_phone.png */,
+				FB206E541C8EA92C009F7681 /* login_regner_phone@2x.png */,
+				FB206E3E1C8E80C7009F7681 /* logo.png */,
 				FBA7F7DE1C8D6DED000C8119 /* addMore.png */,
 				FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */,
 				FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */,
 				FBA7F7E11C8D6DED000C8119 /* choose.png */,
-				FBA7F7E21C8D6DED000C8119 /* icon_128.ico */,
 				FBA7F7E31C8D6DED000C8119 /* tab_buddy_nor@2x.png */,
 				FBA7F7E41C8D6DED000C8119 /* tab_buddy_press@2x.png */,
 				FBA7F7E51C8D6DED000C8119 /* tab_me_nor@2x.png */,
@@ -299,6 +354,7 @@
 		FBA7F7F81C8D6DF5000C8119 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FB206E361C8E7358009F7681 /* Auth(登陆|注册) */,
 				FBA7F7F91C8D6DF5000C8119 /* Button */,
 				FBA7F7FC1C8D6DF5000C8119 /* Fragement */,
 				FBA7F80B1C8D6DF5000C8119 /* Masonry */,
@@ -388,8 +444,6 @@
 		FBA7F8291C8D6DF5000C8119 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FBA7F82A1C8D6DF5000C8119 /* MenuViewController.h */,
-				FBA7F82B1C8D6DF5000C8119 /* MenuViewController.m */,
 				FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */,
 				FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */,
 			);
@@ -510,11 +564,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB206E561C8EA92C009F7681 /* login_regner_phone@2x.png in Resources */,
+				FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */,
 				FBA7F7F31C8D6DED000C8119 /* tab_me_press@2x.png in Resources */,
-				FBA7F7EF1C8D6DED000C8119 /* icon_128.ico in Resources */,
 				FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */,
+				FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */,
 				FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */,
 				FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */,
+				FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */,
 				FBA7F7F61C8D6DED000C8119 /* tab_recent_nor@2x.png in Resources */,
 				FBA7F7F51C8D6DED000C8119 /* tab_qworld_press@2x.png in Resources */,
 				FBA7F7F71C8D6DED000C8119 /* tab_recent_press@2x.png in Resources */,
@@ -523,6 +580,7 @@
 				FBA7F7B71C8D6DAB000C8119 /* Assets.xcassets in Resources */,
 				FBA7F7F41C8D6DED000C8119 /* tab_qworld_nor@2x.png in Resources */,
 				FBA7F7EB1C8D6DED000C8119 /* addMore.png in Resources */,
+				FB206E3F1C8E80C7009F7681 /* logo.png in Resources */,
 				FBA7F7B51C8D6DAB000C8119 /* Main.storyboard in Resources */,
 				FBA7F7F21C8D6DED000C8119 /* tab_me_nor@2x.png in Resources */,
 				FBA7F7F11C8D6DED000C8119 /* tab_buddy_press@2x.png in Resources */,
@@ -554,10 +612,13 @@
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
+				FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */,
+				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
 				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
+				FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */,
 				FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */,
 				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
 				FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */,
@@ -577,7 +638,6 @@
 				FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */,
 				FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */,
 				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
-				FBA7F8461C8D6DF5000C8119 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

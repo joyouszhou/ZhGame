@@ -47,7 +47,7 @@
     UINavigationController * nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
     UINavigationController * nav3 = [[UINavigationController alloc]initWithRootViewController:vc3];
     
-
+    
     [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
     
@@ -58,7 +58,7 @@
     [self.drawerController setShowsShadow:NO];
     [self.drawerController setRestorationIdentifier:@"MMDrawer"];
     [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModePanningNavigationBar];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
     [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
@@ -69,7 +69,7 @@
 //             block(drawerController, drawerSide, percentVisible);
 //         }
      }];
-
+    
     
     
     

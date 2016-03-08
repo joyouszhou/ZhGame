@@ -7,6 +7,13 @@
 //
 
 #import "MyselfListViewController.h"
+#import "ZhLoginViewController.h"
+#import "LHCustomModalTransition.h"
+#import "UIViewController+MMDrawerController.h"
+#import "Zh1ViewController.h"
+#import "MMDrawerController.h"
+#import "ZhRootViewController.h"
+
 #define WIDTH [UIScreen mainScreen].bounds.size.width / 3 * 2
 
 @interface MyselfListViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -26,7 +33,7 @@
     
 }
 
-
+@property (nonatomic, strong) LHCustomModalTransition *transition;
 @end
 
 @implementation MyselfListViewController
@@ -48,13 +55,12 @@
 
 - (void)setupUI{
     
-    _menuArray = @[@"首页",@"电台",@"阅读",@"社区",@"碎片",@"良品",@"设置"];
-    _picArray = @[@"zhuye",@"diantai",@"yuedu",@"shequ",@"suipian",@"liangpin",@"shezhi"];
+    _menuArray = @[@"我的纪录",@"充值"];
+    _picArray = @[@"zhuye",@"diantai"];
     
     _menuTableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     _menuTableView.delegate = self;
     _menuTableView.dataSource = self;
-//    _menuTableView.backgroundColor = [UIColor grayColor];
     _menuTableView.separatorColor = [UIColor colorWithRed:74 / 256.0 green:74 / 256.0 blue:74 / 256.0 alpha:1];
     [self.view addSubview:_menuTableView];
     
@@ -63,7 +69,7 @@
     UIView * view = ({
         
         // 背景
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 220)];
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 150)];
         UIImageView * imageView = [[UIImageView alloc]initWithFrame:view.frame];
         imageView.image = [UIImage imageNamed:@"GrayBackView"];
         [view addSubview:imageView];
@@ -74,7 +80,7 @@
         
         headImageView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 10, 80, 80)];
         headImageView.layer.cornerRadius = headImageView.frame.size.width / 2;
-        headImageView.image = [UIImage imageNamed:@"headImageView"];
+        headImageView.image = [UIImage imageNamed:@"logo"];
         [myselfView addSubview:headImageView];
         
         loginButton = [[UIButton alloc]initWithFrame:CGRectMake(85, 30, WIDTH - 90, 40)];
@@ -82,30 +88,30 @@
         [loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [loginButton addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [myselfView addSubview:loginButton];
-    
-        downloadButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5, 130, 20, 20)];
-        [downloadButton setImage:[UIImage imageNamed:@"download"] forState:UIControlStateNormal];
-        [downloadButton addTarget:self action:@selector(downloadButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [view addSubview:downloadButton];
-        
-        likeButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 2 + 20, 130, 20, 20)];
-        [likeButton setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
-        [likeButton addTarget:self action:@selector(likeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [view addSubview:likeButton];
-        
-        talkButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 3 + 40, 130, 20, 20)];
-        [talkButton setImage:[UIImage imageNamed:@"talk"] forState:UIControlStateNormal];
-        [talkButton addTarget:self action:@selector(talkButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [view addSubview:talkButton];
-        
-        writeButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 4 + 60, 132, 18, 18)];
-        [writeButton setImage:[UIImage imageNamed:@"write"] forState:UIControlStateNormal];
-        [writeButton addTarget:self action:@selector(writeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [view addSubview:writeButton];
-        
-        searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 170, WIDTH , 30)];
-        searchBar.searchBarStyle = UISearchBarStyleProminent;
-        [view addSubview:searchBar];
+//      
+//        downloadButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5, 130, 20, 20)];
+//        [downloadButton setImage:[UIImage imageNamed:@"download"] forState:UIControlStateNormal];
+//        [downloadButton addTarget:self action:@selector(downloadButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [view addSubview:downloadButton];
+//        
+//        likeButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 2 + 20, 130, 20, 20)];
+//        [likeButton setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
+//        [likeButton addTarget:self action:@selector(likeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [view addSubview:likeButton];
+//        
+//        talkButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 3 + 40, 130, 20, 20)];
+//        [talkButton setImage:[UIImage imageNamed:@"talk"] forState:UIControlStateNormal];
+//        [talkButton addTarget:self action:@selector(talkButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [view addSubview:talkButton];
+//        
+//        writeButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5 * 4 + 60, 132, 18, 18)];
+//        [writeButton setImage:[UIImage imageNamed:@"write"] forState:UIControlStateNormal];
+//        [writeButton addTarget:self action:@selector(writeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [view addSubview:writeButton];
+//        
+//        searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 170, WIDTH , 30)];
+//        searchBar.searchBarStyle = UISearchBarStyleProminent;
+//        [view addSubview:searchBar];
         
         view;
     });
@@ -118,6 +124,20 @@
 - (void)loginButtonAction:(UIButton *)button{
 
     NSLog(@"登录 | 注册");
+    Zh1ViewController * center = [[Zh1ViewController alloc] init];
+    
+    UINavigationController * nav = [[ZhRootViewController alloc] initWithRootViewController:center];
+    [self.mm_drawerController
+     setCenterViewController:nav
+     withFullCloseAnimation:YES
+     completion:nil];
+    
+    ZhLoginViewController *modalVC = [ZhLoginViewController new];
+    
+    UINavigationController * nav1= [[UINavigationController alloc] initWithRootViewController:modalVC];
+    
+    [self presentViewController:nav1 animated:YES completion:nil];
+    
     
 }
 

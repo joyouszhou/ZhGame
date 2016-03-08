@@ -6,7 +6,7 @@
 //  Copyright © 2015年 syx. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface MyselfListViewController : UIViewController
 
