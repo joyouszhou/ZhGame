@@ -11,6 +11,7 @@
 		FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7501C8D8CB200501747 /* MMDrawerController.m */; };
 		FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */; };
 		FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */; };
+		FB0BC57A1C965A840014DA54 /* ZhRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */; };
 		FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E3C1C8E77E5009F7681 /* LHCustomModalTransition.m */; };
 		FB206E3F1C8E80C7009F7681 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E3E1C8E80C7009F7681 /* logo.png */; };
 		FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E531C8EA92C009F7681 /* login_regner_phone.png */; };
@@ -88,6 +89,8 @@
 		FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		FB07B7531C8D8CB200501747 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		FB0BC5781C965A840014DA54 /* ZhRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterViewController.h; sourceTree = "<group>"; };
+		FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterViewController.m; sourceTree = "<group>"; };
 		FB206E3B1C8E77E5009F7681 /* LHCustomModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCustomModalTransition.h; sourceTree = "<group>"; };
 		FB206E3C1C8E77E5009F7681 /* LHCustomModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCustomModalTransition.m; sourceTree = "<group>"; };
 		FB206E3E1C8E80C7009F7681 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -225,9 +228,19 @@
 			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
+		FB0BC5771C965A700014DA54 /* Register(注册界面） */ = {
+			isa = PBXGroup;
+			children = (
+				FB0BC5781C965A840014DA54 /* ZhRegisterViewController.h */,
+				FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */,
+			);
+			path = "Register(注册界面）";
+			sourceTree = "<group>";
+		};
 		FB206E361C8E7358009F7681 /* Auth(登陆|注册) */ = {
 			isa = PBXGroup;
 			children = (
+				FB0BC5771C965A700014DA54 /* Register(注册界面） */,
 				FB206E661C8EC01B009F7681 /* Login(登陆界面) */,
 				FB206E5E1C8EBB4B009F7681 /* Utils(基础控件类) */,
 			);
@@ -611,6 +624,7 @@
 				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
+				FB0BC57A1C965A840014DA54 /* ZhRegisterViewController.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
 				FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */,
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
