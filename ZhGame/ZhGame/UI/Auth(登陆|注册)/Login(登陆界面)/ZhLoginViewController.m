@@ -382,6 +382,12 @@
     NSLog(@"注册");
     ZhRegisterViewController *View = [[ZhRegisterViewController alloc] init];
     View.navigationItem.title = @"注册";
+    
+    View.edgesForExtendedLayout = UIRectEdgeNone;
+    View.extendedLayoutIncludesOpaqueBars =NO;
+    View.modalPresentationCapturesStatusBarAppearance =NO;
+    View.navigationController.navigationBar.translucent =NO;
+
     [self.navigationController pushViewController:View animated:YES];
     
 }

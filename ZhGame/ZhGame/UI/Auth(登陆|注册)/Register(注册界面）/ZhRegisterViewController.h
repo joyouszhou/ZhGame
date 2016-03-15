@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZhRegisterViewController : UIViewController
+@interface ZhRegisterViewController : UIViewController<UITextFieldDelegate>
+
 
 @end
