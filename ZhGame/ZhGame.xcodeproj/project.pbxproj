@@ -36,6 +36,29 @@
 		FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */; };
 		FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */; };
 		FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */; };
+		FB59BDE81CA3E2C700FD5EFA /* MMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDD61CA3E2C700FD5EFA /* MMHud.m */; };
+		FB59BDE91CA3E2C700FD5EFA /* MMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDD81CA3E2C700FD5EFA /* MMProgressHUD.m */; };
+		FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDDA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m */; };
+		FB59BDEB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDDB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m */; };
+		FB59BDEC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDDD1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m */; };
+		FB59BDED1CA3E2C700FD5EFA /* MMProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDDF1CA3E2C700FD5EFA /* MMProgressHUDViewController.m */; };
+		FB59BDEE1CA3E2C700FD5EFA /* MMProgressHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDE11CA3E2C700FD5EFA /* MMProgressHUDWindow.m */; };
+		FB59BDEF1CA3E2C700FD5EFA /* MMRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDE31CA3E2C700FD5EFA /* MMRadialProgressView.m */; };
+		FB59BDF01CA3E2C700FD5EFA /* MMVectorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDE51CA3E2C700FD5EFA /* MMVectorImage.m */; };
+		FB59BDF11CA3E2C700FD5EFA /* MSKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDE71CA3E2C700FD5EFA /* MSKeyBoardManager.m */; };
+		FB59BE0C1CA3ED4E00FD5EFA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDF41CA3ED4E00FD5EFA /* NSObject+SBJson.m */; };
+		FB59BE0D1CA3ED4E00FD5EFA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDF71CA3ED4E00FD5EFA /* SBJsonParser.m */; };
+		FB59BE0E1CA3ED4E00FD5EFA /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDF91CA3ED4E00FD5EFA /* SBJsonStreamParser.m */; };
+		FB59BE0F1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDFB1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m */; };
+		FB59BE101CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDFD1CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m */; };
+		FB59BE111CA3ED4E00FD5EFA /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDFF1CA3ED4E00FD5EFA /* SBJsonStreamParserState.m */; };
+		FB59BE121CA3ED4E00FD5EFA /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE011CA3ED4E00FD5EFA /* SBJsonStreamWriter.m */; };
+		FB59BE131CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE031CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m */; };
+		FB59BE141CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE051CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m */; };
+		FB59BE151CA3ED4E00FD5EFA /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE071CA3ED4E00FD5EFA /* SBJsonTokeniser.m */; };
+		FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE091CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m */; };
+		FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */; };
+		FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
@@ -76,6 +99,7 @@
 		FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */; };
 		FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */; };
 		FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */; };
+		FBC1D69D1CA3D30A00319633 /* ZhRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +172,52 @@
 		FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhAuthUtilViewController.m; sourceTree = "<group>"; };
 		FB206E671C8EC01B009F7681 /* ZhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhLoginViewController.h; sourceTree = "<group>"; };
 		FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhLoginViewController.m; sourceTree = "<group>"; };
+		FB59BDD51CA3E2C700FD5EFA /* MMHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHud.h; sourceTree = "<group>"; };
+		FB59BDD61CA3E2C700FD5EFA /* MMHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHud.m; sourceTree = "<group>"; };
+		FB59BDD71CA3E2C700FD5EFA /* MMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUD.h; sourceTree = "<group>"; };
+		FB59BDD81CA3E2C700FD5EFA /* MMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUD.m; sourceTree = "<group>"; };
+		FB59BDD91CA3E2C700FD5EFA /* MMProgressHUD+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMProgressHUD+Animations.h"; sourceTree = "<group>"; };
+		FB59BDDA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMProgressHUD+Animations.m"; sourceTree = "<group>"; };
+		FB59BDDB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMProgressHUD+Class.m"; sourceTree = "<group>"; };
+		FB59BDDC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDOverlayView.h; sourceTree = "<group>"; };
+		FB59BDDD1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDOverlayView.m; sourceTree = "<group>"; };
+		FB59BDDE1CA3E2C700FD5EFA /* MMProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDViewController.h; sourceTree = "<group>"; };
+		FB59BDDF1CA3E2C700FD5EFA /* MMProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDViewController.m; sourceTree = "<group>"; };
+		FB59BDE01CA3E2C700FD5EFA /* MMProgressHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDWindow.h; sourceTree = "<group>"; };
+		FB59BDE11CA3E2C700FD5EFA /* MMProgressHUDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDWindow.m; sourceTree = "<group>"; };
+		FB59BDE21CA3E2C700FD5EFA /* MMRadialProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRadialProgressView.h; sourceTree = "<group>"; };
+		FB59BDE31CA3E2C700FD5EFA /* MMRadialProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRadialProgressView.m; sourceTree = "<group>"; };
+		FB59BDE41CA3E2C700FD5EFA /* MMVectorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVectorImage.h; sourceTree = "<group>"; };
+		FB59BDE51CA3E2C700FD5EFA /* MMVectorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVectorImage.m; sourceTree = "<group>"; };
+		FB59BDE61CA3E2C700FD5EFA /* MSKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSKeyBoardManager.h; sourceTree = "<group>"; };
+		FB59BDE71CA3E2C700FD5EFA /* MSKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSKeyBoardManager.m; sourceTree = "<group>"; };
+		FB59BDF31CA3ED4E00FD5EFA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		FB59BDF41CA3ED4E00FD5EFA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		FB59BDF51CA3ED4E00FD5EFA /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		FB59BDF61CA3ED4E00FD5EFA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		FB59BDF71CA3ED4E00FD5EFA /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		FB59BDF81CA3ED4E00FD5EFA /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		FB59BDF91CA3ED4E00FD5EFA /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		FB59BDFA1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		FB59BDFB1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		FB59BDFC1CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		FB59BDFD1CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		FB59BDFE1CA3ED4E00FD5EFA /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		FB59BDFF1CA3ED4E00FD5EFA /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		FB59BE001CA3ED4E00FD5EFA /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		FB59BE011CA3ED4E00FD5EFA /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		FB59BE021CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		FB59BE031CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		FB59BE041CA3ED4E00FD5EFA /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		FB59BE051CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		FB59BE061CA3ED4E00FD5EFA /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		FB59BE071CA3ED4E00FD5EFA /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		FB59BE081CA3ED4E00FD5EFA /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		FB59BE091CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		FB59BE0A1CA3ED4E00FD5EFA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FB59BE1C1CA3EE4B00FD5EFA /* ZhPublicDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhPublicDef.h; sourceTree = "<group>"; };
+		FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhPublicDef.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -221,6 +291,8 @@
 		FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarController.m; sourceTree = "<group>"; };
 		FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarView.h; sourceTree = "<group>"; };
 		FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarView.m; sourceTree = "<group>"; };
+		FBC1D69B1CA3D30A00319633 /* ZhRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterService.h; sourceTree = "<group>"; };
+		FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +329,8 @@
 		FB07B74A1C8D8CB200501747 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FB59BDF21CA3ED4E00FD5EFA /* SBJson */,
+				FB59BDB41CA3DF7300FD5EFA /* HD */,
 				FB0BC5C31C97BAFB0014DA54 /* ASIHTTP */,
 				FB206E3A1C8E77E5009F7681 /* LHDragableModalTransition */,
 				FB07B74B1C8D8CB200501747 /* MMDrawerController */,
@@ -286,6 +360,8 @@
 			children = (
 				FB0BC5781C965A840014DA54 /* ZhRegisterViewController.h */,
 				FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */,
+				FBC1D69B1CA3D30A00319633 /* ZhRegisterService.h */,
+				FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */,
 			);
 			path = "Register(注册界面）";
 			sourceTree = "<group>";
@@ -379,10 +455,79 @@
 			path = "Login(登陆界面)";
 			sourceTree = "<group>";
 		};
+		FB59BDB41CA3DF7300FD5EFA /* HD */ = {
+			isa = PBXGroup;
+			children = (
+				FB59BDD51CA3E2C700FD5EFA /* MMHud.h */,
+				FB59BDD61CA3E2C700FD5EFA /* MMHud.m */,
+				FB59BDD71CA3E2C700FD5EFA /* MMProgressHUD.h */,
+				FB59BDD81CA3E2C700FD5EFA /* MMProgressHUD.m */,
+				FB59BDD91CA3E2C700FD5EFA /* MMProgressHUD+Animations.h */,
+				FB59BDDA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m */,
+				FB59BDDB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m */,
+				FB59BDDC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.h */,
+				FB59BDDD1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m */,
+				FB59BDDE1CA3E2C700FD5EFA /* MMProgressHUDViewController.h */,
+				FB59BDDF1CA3E2C700FD5EFA /* MMProgressHUDViewController.m */,
+				FB59BDE01CA3E2C700FD5EFA /* MMProgressHUDWindow.h */,
+				FB59BDE11CA3E2C700FD5EFA /* MMProgressHUDWindow.m */,
+				FB59BDE21CA3E2C700FD5EFA /* MMRadialProgressView.h */,
+				FB59BDE31CA3E2C700FD5EFA /* MMRadialProgressView.m */,
+				FB59BDE41CA3E2C700FD5EFA /* MMVectorImage.h */,
+				FB59BDE51CA3E2C700FD5EFA /* MMVectorImage.m */,
+				FB59BDE61CA3E2C700FD5EFA /* MSKeyBoardManager.h */,
+				FB59BDE71CA3E2C700FD5EFA /* MSKeyBoardManager.m */,
+			);
+			path = HD;
+			sourceTree = "<group>";
+		};
+		FB59BDF21CA3ED4E00FD5EFA /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				FB59BDF31CA3ED4E00FD5EFA /* NSObject+SBJson.h */,
+				FB59BDF41CA3ED4E00FD5EFA /* NSObject+SBJson.m */,
+				FB59BDF51CA3ED4E00FD5EFA /* SBJson.h */,
+				FB59BDF61CA3ED4E00FD5EFA /* SBJsonParser.h */,
+				FB59BDF71CA3ED4E00FD5EFA /* SBJsonParser.m */,
+				FB59BDF81CA3ED4E00FD5EFA /* SBJsonStreamParser.h */,
+				FB59BDF91CA3ED4E00FD5EFA /* SBJsonStreamParser.m */,
+				FB59BDFA1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.h */,
+				FB59BDFB1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m */,
+				FB59BDFC1CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.h */,
+				FB59BDFD1CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m */,
+				FB59BDFE1CA3ED4E00FD5EFA /* SBJsonStreamParserState.h */,
+				FB59BDFF1CA3ED4E00FD5EFA /* SBJsonStreamParserState.m */,
+				FB59BE001CA3ED4E00FD5EFA /* SBJsonStreamWriter.h */,
+				FB59BE011CA3ED4E00FD5EFA /* SBJsonStreamWriter.m */,
+				FB59BE021CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.h */,
+				FB59BE031CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m */,
+				FB59BE041CA3ED4E00FD5EFA /* SBJsonStreamWriterState.h */,
+				FB59BE051CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m */,
+				FB59BE061CA3ED4E00FD5EFA /* SBJsonTokeniser.h */,
+				FB59BE071CA3ED4E00FD5EFA /* SBJsonTokeniser.m */,
+				FB59BE081CA3ED4E00FD5EFA /* SBJsonUTF8Stream.h */,
+				FB59BE091CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m */,
+				FB59BE0A1CA3ED4E00FD5EFA /* SBJsonWriter.h */,
+				FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		FB59BE1B1CA3EE4B00FD5EFA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FB59BE1C1CA3EE4B00FD5EFA /* ZhPublicDef.h */,
+				FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */,
+			);
+			name = Config;
+			path = ZhGame/Config;
+			sourceTree = "<group>";
+		};
 		FBA7F79E1C8D6DAB000C8119 = {
 			isa = PBXGroup;
 			children = (
 				FB0BC5F41C97D3060014DA54 /* Framework */,
+				FB59BE1B1CA3EE4B00FD5EFA /* Config */,
 				FB0BC5F31C97D2E70014DA54 /* Utils */,
 				FB07B74A1C8D8CB200501747 /* ThirdLib */,
 				FBA7F7F81C8D6DF5000C8119 /* UI */,
@@ -728,27 +873,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB59BDE81CA3E2C700FD5EFA /* MMHud.m in Sources */,
+				FB59BE0C1CA3ED4E00FD5EFA /* NSObject+SBJson.m in Sources */,
 				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
+				FB59BDF11CA3E2C700FD5EFA /* MSKeyBoardManager.m in Sources */,
 				FB0BC5DC1C97BAFB0014DA54 /* ASIDataDecompressor.m in Sources */,
+				FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */,
+				FB59BE111CA3ED4E00FD5EFA /* SBJsonStreamParserState.m in Sources */,
+				FB59BE101CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m in Sources */,
 				FB0BC5DA1C97BAFB0014DA54 /* ASIAuthenticationDialog.m in Sources */,
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
 				FB0BC57A1C965A840014DA54 /* ZhRegisterViewController.m in Sources */,
+				FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
 				FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */,
+				FB59BDF01CA3E2C700FD5EFA /* MMVectorImage.m in Sources */,
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
+				FB59BE151CA3ED4E00FD5EFA /* SBJsonTokeniser.m in Sources */,
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
 				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
+				FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */,
 				FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */,
 				FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */,
 				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
 				FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */,
+				FB59BDEF1CA3E2C700FD5EFA /* MMRadialProgressView.m in Sources */,
+				FB59BDE91CA3E2C700FD5EFA /* MMProgressHUD.m in Sources */,
+				FB59BE141CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m in Sources */,
 				FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				FB59BE131CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m in Sources */,
 				FBA7F83E1C8D6DF5000C8119 /* MASLayoutConstraint.m in Sources */,
 				FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */,
+				FB59BE0F1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m in Sources */,
+				FB59BDEE1CA3E2C700FD5EFA /* MMProgressHUDWindow.m in Sources */,
 				FBA7F83D1C8D6DF5000C8119 /* MASConstraintMaker.m in Sources */,
+				FB59BDEB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m in Sources */,
 				FBA7F8341C8D6DF5000C8119 /* Zh1ViewController.m in Sources */,
 				FB0BC5F71C97D33E0014DA54 /* ZhStringUtils.m in Sources */,
 				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
@@ -756,6 +918,7 @@
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
+				FBC1D69D1CA3D30A00319633 /* ZhRegisterService.m in Sources */,
 				FB0BC5E01C97BAFB0014DA54 /* ASIInputStream.m in Sources */,
 				FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */,
 				FB0BC5DD1C97BAFB0014DA54 /* ASIDownloadCache.m in Sources */,
@@ -763,12 +926,18 @@
 				FB0BC5DF1C97BAFB0014DA54 /* ASIHTTPRequest.m in Sources */,
 				FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */,
 				FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */,
+				FB59BDED1CA3E2C700FD5EFA /* MMProgressHUDViewController.m in Sources */,
 				FB0BC5E21C97BAFB0014DA54 /* Reachability.m in Sources */,
+				FB59BE121CA3ED4E00FD5EFA /* SBJsonStreamWriter.m in Sources */,
 				FB0BC5DE1C97BAFB0014DA54 /* ASIFormDataRequest.m in Sources */,
 				FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */,
 				FB0BC5DB1C97BAFB0014DA54 /* ASIDataCompressor.m in Sources */,
 				FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */,
 				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
+				FB59BE0D1CA3ED4E00FD5EFA /* SBJsonParser.m in Sources */,
+				FB59BDEC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m in Sources */,
+				FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */,
+				FB59BE0E1CA3ED4E00FD5EFA /* SBJsonStreamParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
 #import "Zh1ViewController.h"
 #import "MMDrawerController.h"
 #import "ZhRootViewController.h"
-
+#import "ZhPublicDef.h"
 #define WIDTH [UIScreen mainScreen].bounds.size.width / 3 * 2
 
 @interface MyselfListViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -25,11 +25,13 @@
     UIView * myselfView;
     UIImageView * headImageView ;
     UIButton * loginButton;
+    UIView  *loginName;
     UIButton * downloadButton;
     UIButton * likeButton;
     UIButton * talkButton;
     UIButton * writeButton;
     UISearchBar * searchBar;
+    BOOL          isLoginSuccess;
     
 }
 
@@ -84,10 +86,23 @@
         [myselfView addSubview:headImageView];
         
         loginButton = [[UIButton alloc]initWithFrame:CGRectMake(85, 30, WIDTH - 90, 40)];
-        [loginButton setTitle:@"登录 | 注册" forState:UIControlStateNormal];
+        
+        NSString * loginName  = [[NSUserDefaults standardUserDefaults] objectForKey:ZH_LOACL_LOGIN_NAME];
+        if (loginName  == nil|| loginName.length<=0) {
+            isLoginSuccess = false;
+            [loginButton setTitle:@"登录 | 注册" forState:UIControlStateNormal];
+        }
+        else
+        {
+            isLoginSuccess = true;
+            [loginButton setTitle:loginName forState:UIControlStateNormal];
+        }
         [loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [loginButton addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [myselfView addSubview:loginButton];
+        
+        
+    
 //      
 //        downloadButton = [[UIButton alloc]initWithFrame:CGRectMake((WIDTH - 80) / 5, 130, 20, 20)];
 //        [downloadButton setImage:[UIImage imageNamed:@"download"] forState:UIControlStateNormal];
@@ -123,6 +138,9 @@
 #pragma mark - ButtonAction
 - (void)loginButtonAction:(UIButton *)button{
 
+    if (isLoginSuccess) {
+        return;
+    }
     NSLog(@"登录 | 注册");
     Zh1ViewController * center = [[Zh1ViewController alloc] init];
     

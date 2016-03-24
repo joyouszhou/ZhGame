@@ -89,6 +89,7 @@
         make.height.mas_equalTo(self.passwordTextField.mas_height);
     }];
     [self UpdateUI];
+    self.RegisterService  = [[ZhRegisterService alloc] init];
 }
 
 #pragma mark - 更新按钮状态
@@ -281,7 +282,13 @@
  */
 -(void)getphonecode:(id)sender
 {
-    [self startTime];
+    self.getPhoneCodeBtn.enabled = NO;
+    [self.RegisterService ZhRegisterGetPhoneCodeWithPhoneNum:[self.phoneNumTextField text] complete:^(BOOL bFinish) {
+        if (bFinish) {
+            self.getPhoneCodeBtn.enabled = YES;
+            [self startTime];
+        };
+    }];
     NSLog(@"获取验证码");
 }
 #pragma mark 注册按钮Click  
@@ -293,6 +300,18 @@
 -(void)doRegist:(id)sender
 {
     NSLog(@"注册");
+    [self.registBtn setEnabled:NO];
+    [self.registBtn setBackgroundColor:[UIColor purpleColor]];
+    [self.RegisterService ZhRegisterCodeWithPhoneNum:[self.phoneNumTextField text] andPassword:[self.passwordTextField text] complete:^(BOOL bFinish) {
+        NSLog(@"注册回调完成");
+        
+        if (bFinish) {
+            [self.registBtn setEnabled:YES];
+            [self.registBtn setBackgroundColor:[UIColor blueColor]];
+            self.getPhoneCodeBtn.enabled = YES;
+            [self startTime];
+        };
+    }];
 }
 #pragma mark 监听Event
 /**

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZhRegisterService.h"
 
 @interface ZhRegisterViewController : UIViewController<UITextFieldDelegate>
 
+@property (strong, nonatomic) ZhRegisterService *RegisterService;
 
 @end
