@@ -59,6 +59,8 @@
 		FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE091CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m */; };
 		FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */; };
 		FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */; };
+		FB6B58011CA92CCC005B06C0 /* ZhUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */; };
+		FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
@@ -218,6 +220,10 @@
 		FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		FB59BE1C1CA3EE4B00FD5EFA /* ZhPublicDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhPublicDef.h; sourceTree = "<group>"; };
 		FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhPublicDef.m; sourceTree = "<group>"; };
+		FB6B57FF1CA92CCC005B06C0 /* ZhUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserInfoView.h; sourceTree = "<group>"; };
+		FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserInfoView.m; sourceTree = "<group>"; };
+		FB6B58061CA9391B005B06C0 /* ZhMyselfService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhMyselfService.h; sourceTree = "<group>"; };
+		FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhMyselfService.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -523,6 +529,25 @@
 			path = ZhGame/Config;
 			sourceTree = "<group>";
 		};
+		FB6B57FE1CA92CCC005B06C0 /* View(个人信息) */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B57FF1CA92CCC005B06C0 /* ZhUserInfoView.h */,
+				FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */,
+			);
+			name = "View(个人信息)";
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB6B58051CA9391B005B06C0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB6B58061CA9391B005B06C0 /* ZhMyselfService.h */,
+				FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		FBA7F79E1C8D6DAB000C8119 = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +726,8 @@
 		FBA7F8281C8D6DF5000C8119 /* MyselfPage(个人) */ = {
 			isa = PBXGroup;
 			children = (
+				FB6B58051CA9391B005B06C0 /* Service */,
+				FB6B57FE1CA92CCC005B06C0 /* View(个人信息) */,
 				FBA7F8291C8D6DF5000C8119 /* Controller */,
 			);
 			path = "MyselfPage(个人)";
@@ -892,6 +919,7 @@
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
 				FB59BE151CA3ED4E00FD5EFA /* SBJsonTokeniser.m in Sources */,
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
+				FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
 				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
@@ -915,6 +943,7 @@
 				FB0BC5F71C97D33E0014DA54 /* ZhStringUtils.m in Sources */,
 				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
 				FB0BC5E11C97BAFB0014DA54 /* ASINetworkQueue.m in Sources */,
+				FB6B58011CA92CCC005B06C0 /* ZhUserInfoView.m in Sources */,
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,

@@ -9,8 +9,10 @@
 #import "ZhRegisterViewController.h"
 #import "Masonry.h"
 #import "ZhStringUtils.h"
+#import "AppDelegate.h"
 
 @interface ZhRegisterViewController ()
+@property (nonatomic, strong)           UIImageView             *headImageView;                 //头像
 @property (nonatomic, strong)  IBOutlet UITextField             *phoneNumTextField;             //手机号数据框
 @property (nonatomic, strong)  IBOutlet UITextField             *phoneCodeTextField;            //手机验证码
 @property (nonatomic, strong)  IBOutlet UIButton                *getPhoneCodeBtn;               //获取手机验证码按钮
@@ -31,12 +33,21 @@
     
     [self.view layoutIfNeeded];
     
+
+    [self.view addSubview:self.headImageView];
+    [self.headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view.mas_top).with.offset(10);
+        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.width.mas_equalTo(80);
+        make.height.mas_equalTo(80);
+    }];
+    
     /**
      *  手机号输入框
      */
     [self.view addSubview:self.phoneNumTextField];
     [self.phoneNumTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view.mas_top).with.offset(30);
+        make.top.mas_equalTo(self.headImageView.mas_bottom).with.offset(20);
         make.centerX.mas_equalTo(self.view.mas_centerX);
         make.width.mas_equalTo(self.view.mas_width).multipliedBy(0.9);
         make.height.mas_equalTo(40);
@@ -118,6 +129,22 @@
 }
 
 #pragma mark - Getter
+#pragma mark  headImageView
+-(UIImageView *)headImageView
+{
+    if (_headImageView) {
+        return _headImageView;
+    }
+    _headImageView = [[UIImageView  alloc] init];
+    UIImage * logoImage = [UIImage imageNamed:@"logo"];
+    _headImageView.image =logoImage;
+    _headImageView.layer.cornerRadius = 40;
+    _headImageView.clipsToBounds = YES;
+    _headImageView.userInteractionEnabled = YES;
+    [_headImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(btnLoadHeadImage:)]];
+    return _headImageView;
+}
+
 #pragma mark phoneNumTextField
 /**
  *  Getter  手机号编辑框
@@ -304,16 +331,94 @@
     [self.registBtn setBackgroundColor:[UIColor purpleColor]];
     [self.RegisterService ZhRegisterCodeWithPhoneNum:[self.phoneNumTextField text] andPassword:[self.passwordTextField text] complete:^(BOOL bFinish) {
         NSLog(@"注册回调完成");
-        
+        [self.registBtn setEnabled:YES];
+        [self.registBtn setBackgroundColor:[UIColor blueColor]];
+        self.getPhoneCodeBtn.enabled = YES;
         if (bFinish) {
-            [self.registBtn setEnabled:YES];
-            [self.registBtn setBackgroundColor:[UIColor blueColor]];
-            self.getPhoneCodeBtn.enabled = YES;
-            [self startTime];
+            [self closeMySelf];
         };
     }];
 }
+
+#pragma mark - UIActionSheet 的监听事件
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"用户点击的是第%ld个按钮",(long)buttonIndex);
+    switch (buttonIndex) {
+        case 0:
+            //照一张
+        {
+            UIImagePickerController *imgPicker=[[UIImagePickerController alloc]init];
+            [imgPicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+            [imgPicker setDelegate:self];
+            [imgPicker setAllowsEditing:YES];
+            [self.navigationController presentViewController:imgPicker animated:YES completion:^{
+            }];
+            
+            
+            
+        }
+            break;
+        case 1:
+            //搞一张
+        {
+            UIImagePickerController *imgPicker=[[UIImagePickerController alloc]init];
+            [imgPicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+            [imgPicker setDelegate:self];
+            [imgPicker setAllowsEditing:YES];
+            [self.navigationController presentViewController:imgPicker animated:YES completion:^{
+            }];
+            
+            
+            
+            break;
+        }
+        default:
+            break;
+    }
+    
+    
+}
+#pragma mark ----------图片选择完成-------------
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage  * userHeadImage=[info objectForKey:@"UIImagePickerControllerEditedImage"];
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        //
+        CATransition *trans=[CATransition animation];
+        [trans setDuration:0.25f];
+        [trans setType:@"flip"];
+        [trans setSubtype:kCATransitionFromLeft];
+        [self.headImageView.layer addAnimation:trans forKey:nil];
+        
+        [self.headImageView setImage:userHeadImage];
+    }];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        //
+    }];
+}
+
 #pragma mark 监听Event
+/**
+ *  点击更换照片
+ *
+ *  @param imaget 照片
+ */
+-(void)btnLoadHeadImage:(UIImageView*)imaget
+{
+    //打开本地相册
+    UIActionSheet *as=[[UIActionSheet alloc]initWithTitle:@"上传头像" delegate:self
+                                        cancelButtonTitle:@"取消"
+                                   destructiveButtonTitle:@"马上照一张"
+                                        otherButtonTitles:@"从相册中搞一张",
+                       nil ];
+    [as showInView:self.view];
+}
 /**
  *  监听 用户输入框变化
  */
@@ -389,5 +494,10 @@ static int timeout_int=59;
     [self.phoneCodeTextField resignFirstResponder];
     [self.phoneNumTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
+}
+-(void)closeMySelf
+{
+    AppDelegate * app = [UIApplication sharedApplication].delegate;
+    [app.tabBar showCenterViewController:NO animated:YES];
 }
 @end

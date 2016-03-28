@@ -46,13 +46,10 @@
     [MMProgressHUD showWithTitle:@"开始注册" status:@"注册中..." ];
     [request setCompletionBlock:^{
         SBJsonParser *paser=[[SBJsonParser alloc] init];
-        NSLog(@"zhouhuan   %@",request.responseString);
-        [MMProgressHUD dismissWithSuccess:@"哈哈哈" title:@"注册成功" afterDelay:0.75f];
-        
         NSDictionary *rootDic=[paser objectWithString:request.responseString];
         int status=[[rootDic objectForKey:@"status"]intValue];
         if (status==1) {
-            [MMProgressHUD dismissWithSuccess:[rootDic objectForKey:@"msg"] title:@"注册成功" afterDelay:0.75f];
+            [MMProgressHUD dismissWithSuccess:[rootDic objectForKey:@"msg"] title:@"注册成功" afterDelay:0.1f];
             NSDictionary *userDic=[rootDic objectForKey:@"userInfo"];
             [[NSUserDefaults standardUserDefaults]setObject:[rootDic objectForKey:@"apiKey"] forKey:ZH_LOACL_API_KEY];
             [[NSUserDefaults standardUserDefaults]setObject:[userDic objectForKey:@"userId"] forKey:ZH_LOACL_USER_ID];
@@ -64,12 +61,12 @@
         }
         else
         {
-            [MMProgressHUD dismissWithError:[rootDic objectForKey:@"msg"] title:@"注册失败" afterDelay:0.75f];
+            [MMProgressHUD dismissWithError:[rootDic objectForKey:@"msg"] title:@"注册失败" afterDelay:0.1f];
             completeBlock(NO);
         }
     }];
     [request setFailedBlock:^{
-        [MMProgressHUD dismissWithError:@"链接服务器失败！" title:@"注册失败" afterDelay:0.75f];
+        [MMProgressHUD dismissWithError:@"链接服务器失败！" title:@"注册失败" afterDelay:0.1f];
         completeBlock(NO);
     }];
     [request startAsynchronous];

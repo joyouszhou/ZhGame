@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZhRegisterService.h"
 
-@interface ZhRegisterViewController : UIViewController<UITextFieldDelegate>
+@interface ZhRegisterViewController : UIViewController<UITextFieldDelegate,UIImagePickerControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) ZhRegisterService *RegisterService;
 
