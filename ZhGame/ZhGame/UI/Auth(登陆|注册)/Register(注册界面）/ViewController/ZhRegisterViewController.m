@@ -10,17 +10,17 @@
 #import "Masonry.h"
 #import "ZhStringUtils.h"
 #import "AppDelegate.h"
-
+#import "ZhPublicDef.h"
+#import "ZhMainViewManager.h"
 @interface ZhRegisterViewController ()
 @property (nonatomic, strong)           UIImageView             *headImageView;                 //头像
 @property (nonatomic, strong)  IBOutlet UITextField             *phoneNumTextField;             //手机号数据框
-@property (nonatomic, strong)  IBOutlet UITextField             *phoneCodeTextField;            //手机验证码
-@property (nonatomic, strong)  IBOutlet UIButton                *getPhoneCodeBtn;               //获取手机验证码按钮
+@property (nonatomic, strong)  IBOutlet UITextField             *NickName;                      //昵称
 @property (nonatomic, strong)  IBOutlet UITextField             *passwordTextField;             //密码输入框
 @property (nonatomic, strong)  IBOutlet UIButton                *registBtn;                     //注册按钮
 
 @property (nonatomic)          BOOL                             bPhoneNum;                      //手机号是否可以
-@property (nonatomic)          BOOL                             bPhoneCode;                     //手机验证码是否可以
+@property (nonatomic)          BOOL                             bNickName;                      //检查昵称有效性
 @property (nonatomic)          BOOL                             bPassword;                      //密码是否可以
 
 @end
@@ -55,34 +55,23 @@
     [self.phoneNumTextField addTarget:self action:@selector(usernameTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
     
     /**
-     *  手机验证码输入框
+     *  昵称输入框
      */
-    [self.view addSubview:self.phoneCodeTextField];
-    [self.phoneCodeTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.NickName];
+    [self.NickName mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.phoneNumTextField.mas_bottom).with.offset(10);
-        make.width.mas_equalTo(self.phoneNumTextField.mas_width).multipliedBy(0.5);
         make.left.mas_equalTo(self.phoneNumTextField.mas_left);
+        make.width.mas_equalTo(self.phoneNumTextField.mas_width);
         make.height.mas_equalTo(self.phoneNumTextField.mas_height);
     }];
-    [self.phoneCodeTextField addTarget:self action:@selector(codeTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
-    
-    /**
-     *  获取手机验证码接口
-     */
-    [self.view addSubview:self.getPhoneCodeBtn];
-    [self.getPhoneCodeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.phoneCodeTextField.mas_top);
-        make.left.mas_equalTo(self.phoneCodeTextField.mas_right).with.offset(10);
-        make.right.mas_equalTo(self.phoneNumTextField.mas_right);
-        make.height.mas_equalTo(self.phoneCodeTextField.mas_height);
-    }];
+    [self.NickName addTarget:self action:@selector(nicknameTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
     
     /**
      *  密码输入框
      */
     [self.view addSubview:self.passwordTextField];
     [self.passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.phoneCodeTextField.mas_bottom).with.offset(10);
+        make.top.mas_equalTo(self.NickName.mas_bottom).with.offset(10);
         make.width.mas_equalTo(self.phoneNumTextField.mas_width);
         make.centerX.mas_equalTo(self.phoneNumTextField.mas_centerX);
         make.height.mas_equalTo(self.phoneNumTextField.mas_height);
@@ -109,15 +98,7 @@
  */
 -(void)UpdateUI
 {
-    if (self.bPhoneNum) {
-        self.getPhoneCodeBtn.enabled = YES;
-        self.getPhoneCodeBtn.backgroundColor = [UIColor blueColor];
-    }
-    else{
-        self.getPhoneCodeBtn.enabled = NO;
-        self.getPhoneCodeBtn.backgroundColor = [UIColor grayColor];
-    }
-    if (self.bPhoneCode&& self.bPhoneNum&&self.bPassword) {
+    if (self.bNickName&& self.bPhoneNum&&self.bPassword) {
         self.registBtn.enabled = YES;
         self.registBtn.backgroundColor = [UIColor blueColor];
     }
@@ -185,66 +166,40 @@
     _phoneNumTextField.leftViewMode = UITextFieldViewModeAlways;
     return _phoneNumTextField;
 }
-#pragma mark phoneCodeTextField
-/**
- *  Getter  手机验证码输入框
- *
- *  @return 手机验证码输入框
- */
--(UITextField *)phoneCodeTextField
+#pragma mark  NickName
+-(UITextField *)NickName
 {
-    if (_phoneCodeTextField) {
-        return _phoneCodeTextField;
+    if (_NickName) {
+        return _NickName;
     }
-    _phoneCodeTextField= [[UITextField alloc] init ];
+    _NickName= [[UITextField alloc] init ];
     //输入框右侧，清楚输入内容，显示时机
-    [_phoneCodeTextField setClearButtonMode:UITextFieldViewModeWhileEditing];
+    [_NickName setClearButtonMode:UITextFieldViewModeWhileEditing];
     //输入框键盘类型
-    [_phoneCodeTextField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
+    [_NickName setKeyboardType:UIKeyboardTypeAlphabet];
     //自动大写－取消
-    [_phoneCodeTextField setAutocapitalizationType:UITextAutocapitalizationTypeNone];
+    [_NickName setAutocapitalizationType:UITextAutocapitalizationTypeNone];
     //不自动纠错
-    [_phoneCodeTextField setAutocorrectionType:UITextAutocorrectionTypeNo];
+    [_NickName setAutocorrectionType:UITextAutocorrectionTypeNo];
     //字体对齐方式
-    [_phoneCodeTextField setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
+    [_NickName setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     //输入框默认显示
-    [_phoneCodeTextField setPlaceholder:@"验证码"];
+    [_NickName setPlaceholder:@"昵称(4-6字符)"];
     //输入框字体大小
-    [_phoneCodeTextField setFont:[UIFont systemFontOfSize:15]];
-    [_phoneCodeTextField setBackgroundColor:[UIColor whiteColor]];
-    [_phoneCodeTextField setDelegate:self];
+    [_NickName setDelegate:self];
+    [_NickName setFont:[UIFont systemFontOfSize:15]];
+    [_NickName setBackgroundColor:[UIColor whiteColor]];
     //输入框边框颜色
-    _phoneCodeTextField.layer.borderColor = [[UIColor blackColor] CGColor];
+    _NickName.layer.borderColor = [[UIColor blackColor] CGColor];
     //输入框边框宽度
-    _phoneCodeTextField.layer.borderWidth = 0.2;
-    _phoneCodeTextField.layer.cornerRadius =2.0;
+    _NickName.layer.borderWidth = 0.2;
+    _NickName.layer.cornerRadius =2.0;
     //账号输入框左边的图片
     UIImageView * leftImageView = [[ UIImageView  alloc]initWithImage:[UIImage imageNamed:@"login_regner_phone"]];
-    _phoneCodeTextField.leftView = leftImageView;//UITextField 的左边view
+    _NickName.leftView = leftImageView;//UITextField 的左边view
     //设置左边图片显示时机
-    _phoneCodeTextField.leftViewMode = UITextFieldViewModeAlways;
-    return _phoneCodeTextField;
-}
-#pragma mark getPhoneCodeBtn
-/**
- *  Getter  获取手机验证码接口
- *
- *  @return 按钮
- */
--(UIButton *)getPhoneCodeBtn
-{
-    if (_getPhoneCodeBtn) {
-        return _getPhoneCodeBtn;
-    }
-    _getPhoneCodeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _getPhoneCodeBtn.layer.cornerRadius =5;
-    _getPhoneCodeBtn .backgroundColor = [UIColor blueColor];
-    _getPhoneCodeBtn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
-    [_getPhoneCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [_getPhoneCodeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_getPhoneCodeBtn addTarget:self action:@selector(getphonecode:) forControlEvents:UIControlEventTouchUpInside];
-
-    return _getPhoneCodeBtn;
+    _NickName.leftViewMode = UITextFieldViewModeAlways;
+    return _NickName;
 }
 
 #pragma mark passwordTextField
@@ -303,22 +258,7 @@
 }
 
 #pragma mark - Event 
-#pragma mark 获取验证码按钮 click
-/**
- *  获取手机验证码 click事件
- */
--(void)getphonecode:(id)sender
-{
-    self.getPhoneCodeBtn.enabled = NO;
-    [self.RegisterService ZhRegisterGetPhoneCodeWithPhoneNum:[self.phoneNumTextField text] complete:^(BOOL bFinish) {
-        if (bFinish) {
-            self.getPhoneCodeBtn.enabled = YES;
-            [self startTime];
-        };
-    }];
-    NSLog(@"获取验证码");
-}
-#pragma mark 注册按钮Click  
+#pragma mark 注册按钮Click
 /**
  *  注册按钮click事件
  *
@@ -327,19 +267,27 @@
 -(void)doRegist:(id)sender
 {
     NSLog(@"注册");
+    NSLog(@"上传图片");
+    
+    
+    
     [self.registBtn setEnabled:NO];
     [self.registBtn setBackgroundColor:[UIColor purpleColor]];
-    [self.RegisterService ZhRegisterCodeWithPhoneNum:[self.phoneNumTextField text] andPassword:[self.passwordTextField text] complete:^(BOOL bFinish) {
-        NSLog(@"注册回调完成");
-        [self.registBtn setEnabled:YES];
-        [self.registBtn setBackgroundColor:[UIColor blueColor]];
-        self.getPhoneCodeBtn.enabled = YES;
-        if (bFinish) {
-            [self closeMySelf];
-        };
+    
+    [self.RegisterService ZhRegisterUploadheadImage:self.headImageView.image andLoginName:[self.phoneNumTextField text] coplete:^(BOOL isFinish, NSString *data) {
+        [self.RegisterService ZhRegisterCodeWithPhoneNum:[self.phoneNumTextField text] andNickName:[self.NickName text] andPassword:[self.passwordTextField text] andHeadImage:data complete:^(BOOL bFinish) {
+            NSLog(@"注册回调完成");
+            [self.registBtn setEnabled:YES];
+            [self.registBtn setBackgroundColor:[UIColor blueColor]];
+            if (bFinish) {
+                if ([self.delegae respondsToSelector:@selector(ZhRegisterSuccessDelegate)]) {
+                    [self.delegae ZhRegisterSuccessDelegate];
+                }
+                [self closeMySelf];
+            };
+        }];
     }];
 }
-
 #pragma mark - UIActionSheet 的监听事件
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
@@ -433,14 +381,14 @@
     [self UpdateUI];
 
 }
--(void)codeTextFieldChanged
+-(void)nicknameTextFieldChanged
 {
-    if ([ZhStringUtils isPhoneCode:[self.phoneCodeTextField text]]) {
-        self.bPhoneCode = true;
+    if ([ZhStringUtils isNickName:[self.NickName text]]) {
+        self.bNickName  = true;
     }
     else
     {
-        self.bPhoneCode = NO;
+        self.bNickName = NO;
     }
     [self UpdateUI];
 }
@@ -458,46 +406,15 @@
 }
 
 #pragma mark - 定义获取验证的按钮
-static int timeout_int=59;
--(void)startTime{
-    // 【填写验证码页】点击【重新获取】按钮
-    timeout_int=59;
-    //倒计时时间
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
-    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
-    dispatch_source_set_event_handler(_timer, ^{
-        if(timeout_int<=0){ //倒计时结束，关闭
-            dispatch_source_cancel(_timer);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                self.getPhoneCodeBtn.userInteractionEnabled = YES;
-                [self.getPhoneCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
-            });
-        }else{
-            //            int minutes = timeout_int / 60;
-            int seconds = timeout_int % 61;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                //设置界面的按钮显示
-                self.getPhoneCodeBtn.userInteractionEnabled = NO;
-                [self.getPhoneCodeBtn setTitle:[NSString stringWithFormat:@"%@%ds",@"重新获取验证码",seconds] forState:UIControlStateNormal];
-            });
-            timeout_int--;
-        }
-    });
-    dispatch_resume(_timer);
-}
-
 #pragma mark - 设置输入框，失去焦点后关闭键盘
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self.phoneCodeTextField resignFirstResponder];
+    [self.NickName resignFirstResponder];
     [self.phoneNumTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
 }
 -(void)closeMySelf
 {
-    AppDelegate * app = [UIApplication sharedApplication].delegate;
-    [app.tabBar showCenterViewController:NO animated:YES];
+    [[ZhMainViewManager shareInstance] showMainView];
 }
 @end

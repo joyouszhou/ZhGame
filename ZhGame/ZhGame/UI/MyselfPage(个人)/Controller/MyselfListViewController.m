@@ -34,7 +34,7 @@
     UIButton * writeButton;
     UISearchBar * searchBar;
     BOOL          isLoginSuccess;
-    
+    ZhUserInfoView *userInfoview ;
 }
 
 @property (nonatomic, strong) LHCustomModalTransition *transition;
@@ -43,13 +43,23 @@
 @implementation MyselfListViewController
 
 
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+}
+-(void)viewWillLayoutSubviews
+{
+    
+}
+
 - (void)viewDidLoad {
     
     self.view.backgroundColor = [UIColor whiteColor];
 
     _menuArray = [NSArray new];
     _picArray = [NSArray new];
-
+    
     [self setupUI];
     
     [super viewDidLoad];
@@ -67,10 +77,10 @@
     _menuTableView.separatorColor = [UIColor colorWithRed:74 / 256.0 green:74 / 256.0 blue:74 / 256.0 alpha:1];
     [self.view addSubview:_menuTableView];
     
-    ZhUserInfoView *view = [[ZhUserInfoView alloc]  initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
-    view.delegate = self;
-    view.backgroundColor = [UIColor whiteColor];
-    [_menuTableView setTableHeaderView:view];
+    userInfoview = [[ZhUserInfoView alloc]  initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
+    userInfoview.delegate = self;
+    userInfoview.backgroundColor = [UIColor whiteColor];
+    [_menuTableView setTableHeaderView:userInfoview];
 
 }
 
@@ -82,7 +92,9 @@
     [self.mm_drawerController setCenterViewController:nav
                                withFullCloseAnimation:YES
                                            completion:nil];
-    ZhLoginViewController *modalVC = [ZhLoginViewController new];
+    ZhLoginViewController *modalVC = [[ZhLoginViewController alloc] init];
+    
+    modalVC.delegae = self;
     
     UINavigationController * nav1= [[UINavigationController alloc] initWithRootViewController:modalVC];
     
@@ -169,6 +181,18 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark - 登录完成代理方法
+/**
+ *  登录完成，更新用户中心界面
+ */
+-(void)ZhLoginSuccessDelegate
+{
+    if (userInfoview) {
+        [userInfoview updateUserInfo];
+    }
 }
 
 @end

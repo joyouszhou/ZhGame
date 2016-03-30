@@ -33,4 +33,11 @@
 @property   (nonatomic, strong)             id<ZhLoginDelegate>         delegate;       //代理方法
 @property   (nonatomic, strong)             ZhMyselfService*            myinfoService;  //MVVM Service
 
+#pragma mark - 更新用户状态
+/**
+ *  更新用户状态，从def里面读取用户信息
+ */
+-(void)updateUserInfo;
+
+
 @end

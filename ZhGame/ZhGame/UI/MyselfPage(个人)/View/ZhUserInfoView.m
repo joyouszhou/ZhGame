@@ -13,6 +13,7 @@
 #import "ZhLoginViewController.h"
 #import "MMDrawerController.h"
 #import "UIViewController+MMDrawerController.h"
+#import "ZhPublicDef.h"
 @implementation ZhUserInfoView
 
 -(void)drawRect:(CGRect)rect
@@ -67,21 +68,7 @@
         make.height.mas_equalTo(self.loginNameBtn.mas_height);
     }];
     
-    [self.myinfoService ZhGetLoginStats:^(BOOL isLogin, NSString *title) {
-        if (!isLogin) {
-            self.loginNameView.hidden = YES;
-            self.loginNameBtn.hidden = NO;
-            self.logoutBtn.hidden = YES;
-            [self.loginNameBtn setTitle:title forState:UIControlStateNormal];
-        }
-        else
-        {
-            self.loginNameBtn.hidden = YES;
-            self.logoutBtn.hidden = NO;
-            self.loginNameView.hidden =NO;
-            [self.loginNameView setText:title];
-        }
-    }];
+    [self updateUserInfo];
 }
 #pragma mark - 背景图片 Getter
 /**
@@ -171,11 +158,11 @@
         return _logoutBtn;
     }
     _logoutBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_logoutBtn setTitle:@"注销" forState:UIControlStateNormal];
+    [_logoutBtn setTitle:@"切换帐号" forState:UIControlStateNormal];
     [_logoutBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [_logoutBtn setContentEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
     [_logoutBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_logoutBtn addTarget:self action:@selector(logouButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [_logoutBtn addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     return _logoutBtn;
 }
 #pragma mark - loginBtn click
@@ -196,4 +183,27 @@
     self.loginNameView.hidden =YES;
     [self.loginNameBtn setTitle:@"登录|注册" forState:UIControlStateNormal];
 }
+#pragma mark - 更新用户状态
+/**
+ *  更新用户状态，从def里面读取用户信息
+ */
+-(void)updateUserInfo
+{
+    [self.myinfoService ZhGetLoginStats:^(BOOL isLogin, NSString *title) {
+        if (!isLogin) {
+            self.loginNameView.hidden = YES;
+            self.loginNameBtn.hidden = NO;
+            self.logoutBtn.hidden = YES;
+            [self.loginNameBtn setTitle:title forState:UIControlStateNormal];
+        }
+        else
+        {
+            self.loginNameBtn.hidden = YES;
+            self.logoutBtn.hidden = NO;
+            self.loginNameView.hidden =NO;
+            [self.loginNameView setText:title];
+        }
+    }];
+}
+
 @end

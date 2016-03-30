@@ -8,6 +8,7 @@
 
 #import "Zh5TableViewController.h"
 #import "AppDelegate.h"
+#import "ZhMainViewManager.h"
 @interface Zh5TableViewController ()
 
 @end
@@ -37,8 +38,7 @@
 }
 -(void)doBack
 {
-    AppDelegate * app = [UIApplication sharedApplication].delegate;
-    [app.tabBar showCenterViewController:NO animated:YES];
+    [[ZhMainViewManager shareInstance] doShowTabbarView];
 }
 
 @end

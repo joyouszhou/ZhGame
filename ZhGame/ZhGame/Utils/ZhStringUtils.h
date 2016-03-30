@@ -41,4 +41,14 @@
  */
 +(BOOL)isPassword:(NSString *)passwrod;
 
+#pragma mark － 检查昵称的有效性
+/**
+ *  检查昵称的有效性
+ *
+ *  @param code 昵称
+ *
+ *  @return YES 合法昵称  NO 非昵称
+ */
++(BOOL)isNickName:(NSString *)nickname;
+
 @end

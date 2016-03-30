@@ -40,6 +40,24 @@
     BOOL bRet =  [pred evaluateWithObject:code];
     return bRet;
 }
+#pragma mark － 检查昵称的有效性
+/**
+ *  检查昵称的有效性
+ *
+ *  @param code 昵称
+ *
+ *  @return YES 合法昵称  NO 非昵称
+ */
++(BOOL)isNickName:(NSString *)nickname
+{
+//    NSString *regex = @"1[0-9]{5}";
+//    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+//    BOOL bRet =  [pred evaluateWithObject:code];
+    if (nickname == nil|| nickname.length<4|| nickname.length>8) {
+        return false;
+    }
+    return true;
+}
 #pragma mark - 检查密码有效性
 /**
  *  检查密码有效性

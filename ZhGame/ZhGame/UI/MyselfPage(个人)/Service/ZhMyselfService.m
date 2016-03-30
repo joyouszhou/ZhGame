@@ -15,7 +15,7 @@
 
 -(void)ZhGetLoginStats:(ZhMyselfInfo)info
 {
-    NSString * loginName  = [[NSUserDefaults standardUserDefaults] objectForKey:ZH_LOACL_LOGIN_NAME];
+    NSString * loginName  = [[NSUserDefaults standardUserDefaults] objectForKey:ZH_LOACL_LOGIN_NICKNAME];
     if (loginName == nil || loginName.length<=0) {
         info(false,@"登录|注册");
     }

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZhLoginViewController.h"
 
-@interface MyselfListViewController : UIViewController
+@interface MyselfListViewController : UIViewController<ZhLoginDelegate>
 
 @end

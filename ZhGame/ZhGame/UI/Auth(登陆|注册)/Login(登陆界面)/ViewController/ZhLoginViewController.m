@@ -10,18 +10,23 @@
 #import "Masonry.h"
 #import "AppDelegate.h"
 #import "ZhRegisterViewController.h"
-
+#import "ZhStringUtils.h"
+#import "ZhMainViewManager.h"
 
 @interface ZhLoginViewController ()
 @property (nonatomic, strong) UIImageView           *AccountLogo;                   //头像
-@property (nonatomic, strong) UITextField           *txtUserId;                     //账号输入框
-@property (nonatomic, strong) UITextField           *txtPassword;                   //密码输入框
-@property (nonatomic, strong) UIButton              *ShowPasswordBtn;               //显示密码按钮
-@property (nonatomic, strong) UIButton              *loginBtn;                      //登陆按钮
-@property (nonatomic, strong) UIButton              *forgetPasswordBtn;             //忘记密码按钮
+@property (nonatomic, strong) IBOutlet UITextField           *txtUserId;                     //账号输入框
+@property (nonatomic, strong) IBOutlet UITextField           *txtPassword;                   //密码输入框
+@property (nonatomic, strong) IBOutlet UIButton              *ShowPasswordBtn;               //显示密码按钮
+@property (nonatomic, strong) IBOutlet UIButton              *loginBtn;                      //登陆按钮
+@property (nonatomic, strong) IBOutlet UIButton              *forgetPasswordBtn;             //忘记密码按钮
 @property (nonatomic, strong) UILabel               *copyrightLabel;                //官网显示
 @property (nonatomic, strong) UIView                *lineView;                      //官网显示上边的线
 @property (nonatomic, strong) UIButton              *registerBtn;                   //注册按钮
+
+@property (nonatomic, assign) BOOL                  bLoginName;                     //用户名是否正确
+@property (nonatomic, assign) BOOL                  bpassword;                      //密码是否支持
+
 @end
 
 @implementation ZhLoginViewController
@@ -57,7 +62,7 @@
         make.width.mas_equalTo(self.view.mas_width).multipliedBy(0.9);
         make.height.mas_equalTo(50);
     }];
-    
+    [self.txtUserId addTarget:self action:@selector(usernameTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
     /**
      *  设置密码输入框
      */
@@ -68,6 +73,7 @@
         make.width.equalTo(self.txtUserId.mas_width);
         make.height.mas_equalTo(self.txtUserId.mas_height);
     }];
+    [self.txtPassword addTarget:self action:@selector(PwTextFieldChanged) forControlEvents:UIControlEventEditingChanged];
     /**
      *  显示密码明文/密文
      */
@@ -121,8 +127,22 @@
         make.centerX.equalTo(self.view.mas_centerX);
         make.bottom.equalTo(self.lineView.mas_top).with.offset(-5);
     }];
+    [self updateUI];
+    self.loginService = [[ZhLoginService alloc] init];
 }
-
+#pragma mark - 更新UI 
+-(void)updateUI
+{
+    if (self.bpassword &&self.bLoginName) {
+        self.loginBtn.enabled = YES;
+        self.loginBtn.backgroundColor = [UIColor blueColor];
+    }
+    else
+    {
+        self.loginBtn.enabled = false;
+        self.loginBtn.backgroundColor = [UIColor grayColor];
+    }
+}
 
 #pragma mark - 控件
 #pragma mark   AccountLogo
@@ -354,8 +374,7 @@
  */
 -(void)closeMySelf
 {
-    AppDelegate * app = [UIApplication sharedApplication].delegate;
-    [app.tabBar showCenterViewController:NO animated:YES];
+    [[ZhMainViewManager shareInstance] showMainView];
 }
 #pragma mark 登陆按钮click
 /**
@@ -364,6 +383,19 @@
 -(void)doLogin
 {
     NSLog(@"登陆");
+    [self.loginService ZhLoginRequeset:[self.txtUserId text] pw:[self.txtPassword text] complete:^(BOOL isFinish) {
+        if (isFinish) {
+            if ([self.delegae respondsToSelector:@selector(ZhLoginSuccessDelegate)]) {
+                [self.delegae ZhLoginSuccessDelegate];
+            }
+            [self closeMySelf];
+        }
+        else{
+            
+        }
+    }];
+    
+    
 }
 #pragma mark 忘记密码click
 /**
@@ -381,16 +413,52 @@
 {
     NSLog(@"注册");
     ZhRegisterViewController *View = [[ZhRegisterViewController alloc] init];
+    [View setDelegae:self];
     View.navigationItem.title = @"注册";
     
     View.edgesForExtendedLayout = UIRectEdgeNone;
     View.extendedLayoutIncludesOpaqueBars =NO;
     View.modalPresentationCapturesStatusBarAppearance =NO;
     View.navigationController.navigationBar.translucent =NO;
-
-    [self.navigationController pushViewController:View animated:YES];
     
+    [self.navigationController pushViewController:View animated:YES];
 }
-
+#pragma mark - 注册代理方法
+/**
+ *  注册成功，直接进行登录完成方法
+ */
+-(void)ZhRegisterSuccessDelegate
+{
+    if ([self.delegae respondsToSelector:@selector(ZhLoginSuccessDelegate)]) {
+        [self.delegae ZhLoginSuccessDelegate];
+    }
+}
+#pragma mark - MVVM监听
+/**
+ *  用户名监听
+ */
+-(void)usernameTextFieldChanged
+{
+    if ([ZhStringUtils isPhone:[self.txtUserId text]]) {
+        self.bLoginName = true;
+    }
+    else{
+        self.bLoginName = false;;
+    }
+    [self updateUI];
+}
+/**
+ *  密码监听
+ */
+-(void)PwTextFieldChanged
+{
+    if ([ZhStringUtils isPassword:[self.txtPassword text]]) {
+        self.bpassword = true;
+    }
+    else{
+        self.bpassword = false;;
+    }
+    [self updateUI];
+}
 
 @end

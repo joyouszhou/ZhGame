@@ -11,7 +11,6 @@
 		FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7501C8D8CB200501747 /* MMDrawerController.m */; };
 		FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */; };
 		FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */; };
-		FB0BC57A1C965A840014DA54 /* ZhRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */; };
 		FB0BC5DA1C97BAFB0014DA54 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0BC5C51C97BAFB0014DA54 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB0BC5DB1C97BAFB0014DA54 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0BC5C81C97BAFB0014DA54 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB0BC5DC1C97BAFB0014DA54 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0BC5CA1C97BAFB0014DA54 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -35,7 +34,14 @@
 		FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */; };
 		FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */; };
 		FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */; };
-		FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */; };
+		FB4398941CAB80E3005E7B4E /* ZhRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */; };
+		FB4398951CAB80E3005E7B4E /* ZhRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398931CAB80E3005E7B4E /* ZhRegisterViewController.m */; };
+		FB43989A1CAB8109005E7B4E /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398991CAB8109005E7B4E /* ZhLoginViewController.m */; };
+		FB43989D1CAB811E005E7B4E /* ZhLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB43989C1CAB811E005E7B4E /* ZhLoginService.m */; };
+		FB4398A11CABBAE1005E7B4E /* ZhStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398A01CABBAE1005E7B4E /* ZhStartViewController.m */; };
+		FB4398A51CABBE18005E7B4E /* ZhCountBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398A41CABBE18005E7B4E /* ZhCountBtn.m */; };
+		FB4398A71CABD44E005E7B4E /* startImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4398A61CABD44E005E7B4E /* startImage.png */; };
+		FB4398AB1CABED7A005E7B4E /* ZhMainViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398AA1CABED7A005E7B4E /* ZhMainViewManager.m */; };
 		FB59BDE81CA3E2C700FD5EFA /* MMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDD61CA3E2C700FD5EFA /* MMHud.m */; };
 		FB59BDE91CA3E2C700FD5EFA /* MMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDD81CA3E2C700FD5EFA /* MMProgressHUD.m */; };
 		FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BDDA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m */; };
@@ -101,7 +107,6 @@
 		FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */; };
 		FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */; };
 		FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */; };
-		FBC1D69D1CA3D30A00319633 /* ZhRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,8 +136,6 @@
 		FB07B7521C8D8CB200501747 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		FB07B7531C8D8CB200501747 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		FB07B7541C8D8CB200501747 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
-		FB0BC5781C965A840014DA54 /* ZhRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterViewController.h; sourceTree = "<group>"; };
-		FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterViewController.m; sourceTree = "<group>"; };
 		FB0BC5C41C97BAFB0014DA54 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		FB0BC5C51C97BAFB0014DA54 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		FB0BC5C61C97BAFB0014DA54 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -172,8 +175,21 @@
 		FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pd_sdk_dialog_pwd@2x.png"; sourceTree = "<group>"; };
 		FB206E5F1C8EBB4B009F7681 /* ZhAuthUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhAuthUtilViewController.h; sourceTree = "<group>"; };
 		FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhAuthUtilViewController.m; sourceTree = "<group>"; };
-		FB206E671C8EC01B009F7681 /* ZhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhLoginViewController.h; sourceTree = "<group>"; };
-		FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhLoginViewController.m; sourceTree = "<group>"; };
+		FB43988F1CAB80E3005E7B4E /* ZhRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterService.h; sourceTree = "<group>"; };
+		FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterService.m; sourceTree = "<group>"; };
+		FB4398921CAB80E3005E7B4E /* ZhRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterViewController.h; sourceTree = "<group>"; };
+		FB4398931CAB80E3005E7B4E /* ZhRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterViewController.m; sourceTree = "<group>"; };
+		FB4398981CAB8109005E7B4E /* ZhLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhLoginViewController.h; sourceTree = "<group>"; };
+		FB4398991CAB8109005E7B4E /* ZhLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhLoginViewController.m; sourceTree = "<group>"; };
+		FB43989B1CAB811E005E7B4E /* ZhLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhLoginService.h; sourceTree = "<group>"; };
+		FB43989C1CAB811E005E7B4E /* ZhLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhLoginService.m; sourceTree = "<group>"; };
+		FB43989F1CABBAE1005E7B4E /* ZhStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhStartViewController.h; sourceTree = "<group>"; };
+		FB4398A01CABBAE1005E7B4E /* ZhStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhStartViewController.m; sourceTree = "<group>"; };
+		FB4398A31CABBE18005E7B4E /* ZhCountBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhCountBtn.h; sourceTree = "<group>"; };
+		FB4398A41CABBE18005E7B4E /* ZhCountBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhCountBtn.m; sourceTree = "<group>"; };
+		FB4398A61CABD44E005E7B4E /* startImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startImage.png; sourceTree = "<group>"; };
+		FB4398A91CABED7A005E7B4E /* ZhMainViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhMainViewManager.h; sourceTree = "<group>"; };
+		FB4398AA1CABED7A005E7B4E /* ZhMainViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhMainViewManager.m; sourceTree = "<group>"; };
 		FB59BDD51CA3E2C700FD5EFA /* MMHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHud.h; sourceTree = "<group>"; };
 		FB59BDD61CA3E2C700FD5EFA /* MMHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHud.m; sourceTree = "<group>"; };
 		FB59BDD71CA3E2C700FD5EFA /* MMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUD.h; sourceTree = "<group>"; };
@@ -297,8 +313,6 @@
 		FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarController.m; sourceTree = "<group>"; };
 		FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarView.h; sourceTree = "<group>"; };
 		FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarView.m; sourceTree = "<group>"; };
-		FBC1D69B1CA3D30A00319633 /* ZhRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterService.h; sourceTree = "<group>"; };
-		FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,10 +378,8 @@
 		FB0BC5771C965A700014DA54 /* Register(注册界面） */ = {
 			isa = PBXGroup;
 			children = (
-				FB0BC5781C965A840014DA54 /* ZhRegisterViewController.h */,
-				FB0BC5791C965A840014DA54 /* ZhRegisterViewController.m */,
-				FBC1D69B1CA3D30A00319633 /* ZhRegisterService.h */,
-				FBC1D69C1CA3D30A00319633 /* ZhRegisterService.m */,
+				FB43988E1CAB80E3005E7B4E /* service */,
+				FB4398911CAB80E3005E7B4E /* ViewController */,
 			);
 			path = "Register(注册界面）";
 			sourceTree = "<group>";
@@ -455,10 +467,73 @@
 		FB206E661C8EC01B009F7681 /* Login(登陆界面) */ = {
 			isa = PBXGroup;
 			children = (
-				FB206E671C8EC01B009F7681 /* ZhLoginViewController.h */,
-				FB206E681C8EC01B009F7681 /* ZhLoginViewController.m */,
+				FB4398961CAB8109005E7B4E /* Service */,
+				FB4398971CAB8109005E7B4E /* ViewController */,
 			);
 			path = "Login(登陆界面)";
+			sourceTree = "<group>";
+		};
+		FB43988E1CAB80E3005E7B4E /* service */ = {
+			isa = PBXGroup;
+			children = (
+				FB43988F1CAB80E3005E7B4E /* ZhRegisterService.h */,
+				FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		FB4398911CAB80E3005E7B4E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB4398921CAB80E3005E7B4E /* ZhRegisterViewController.h */,
+				FB4398931CAB80E3005E7B4E /* ZhRegisterViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FB4398961CAB8109005E7B4E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FB43989B1CAB811E005E7B4E /* ZhLoginService.h */,
+				FB43989C1CAB811E005E7B4E /* ZhLoginService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FB4398971CAB8109005E7B4E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB4398981CAB8109005E7B4E /* ZhLoginViewController.h */,
+				FB4398991CAB8109005E7B4E /* ZhLoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FB43989E1CABBAC2005E7B4E /* Start(启动页) */ = {
+			isa = PBXGroup;
+			children = (
+				FB43989F1CABBAE1005E7B4E /* ZhStartViewController.h */,
+				FB4398A01CABBAE1005E7B4E /* ZhStartViewController.m */,
+			);
+			path = "Start(启动页)";
+			sourceTree = "<group>";
+		};
+		FB4398A21CABBE18005E7B4E /* CountBtn(倒计时按钮) */ = {
+			isa = PBXGroup;
+			children = (
+				FB4398A31CABBE18005E7B4E /* ZhCountBtn.h */,
+				FB4398A41CABBE18005E7B4E /* ZhCountBtn.m */,
+			);
+			path = "CountBtn(倒计时按钮)";
+			sourceTree = "<group>";
+		};
+		FB4398A81CABED5E005E7B4E /* MainViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB4398A91CABED7A005E7B4E /* ZhMainViewManager.h */,
+				FB4398AA1CABED7A005E7B4E /* ZhMainViewManager.m */,
+			);
+			path = MainViewManager;
 			sourceTree = "<group>";
 		};
 		FB59BDB41CA3DF7300FD5EFA /* HD */ = {
@@ -619,6 +694,7 @@
 		FBA7F7DD1C8D6DED000C8119 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FB4398A61CABD44E005E7B4E /* startImage.png */,
 				FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */,
 				FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */,
 				FB206E531C8EA92C009F7681 /* login_regner_phone.png */,
@@ -644,6 +720,9 @@
 		FBA7F7F81C8D6DF5000C8119 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FB4398A81CABED5E005E7B4E /* MainViewManager */,
+				FB4398A21CABBE18005E7B4E /* CountBtn(倒计时按钮) */,
+				FB43989E1CABBAC2005E7B4E /* Start(启动页) */,
 				FB206E361C8E7358009F7681 /* Auth(登陆|注册) */,
 				FBA7F7F91C8D6DF5000C8119 /* Button */,
 				FBA7F7FC1C8D6DF5000C8119 /* Fragement */,
@@ -861,6 +940,7 @@
 				FBA7F7F31C8D6DED000C8119 /* tab_me_press@2x.png in Resources */,
 				FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */,
 				FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */,
+				FB4398A71CABD44E005E7B4E /* startImage.png in Resources */,
 				FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */,
 				FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */,
 				FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */,
@@ -900,10 +980,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4398A11CABBAE1005E7B4E /* ZhStartViewController.m in Sources */,
 				FB59BDE81CA3E2C700FD5EFA /* MMHud.m in Sources */,
 				FB59BE0C1CA3ED4E00FD5EFA /* NSObject+SBJson.m in Sources */,
 				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
 				FB59BDF11CA3E2C700FD5EFA /* MSKeyBoardManager.m in Sources */,
+				FB43989A1CAB8109005E7B4E /* ZhLoginViewController.m in Sources */,
 				FB0BC5DC1C97BAFB0014DA54 /* ASIDataDecompressor.m in Sources */,
 				FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */,
 				FB59BE111CA3ED4E00FD5EFA /* SBJsonStreamParserState.m in Sources */,
@@ -911,10 +993,8 @@
 				FB0BC5DA1C97BAFB0014DA54 /* ASIAuthenticationDialog.m in Sources */,
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
-				FB0BC57A1C965A840014DA54 /* ZhRegisterViewController.m in Sources */,
 				FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
-				FB206E691C8EC01B009F7681 /* ZhLoginViewController.m in Sources */,
 				FB59BDF01CA3E2C700FD5EFA /* MMVectorImage.m in Sources */,
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
 				FB59BE151CA3ED4E00FD5EFA /* SBJsonTokeniser.m in Sources */,
@@ -929,6 +1009,7 @@
 				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
 				FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */,
 				FB59BDEF1CA3E2C700FD5EFA /* MMRadialProgressView.m in Sources */,
+				FB4398941CAB80E3005E7B4E /* ZhRegisterService.m in Sources */,
 				FB59BDE91CA3E2C700FD5EFA /* MMProgressHUD.m in Sources */,
 				FB59BE141CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m in Sources */,
 				FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -947,13 +1028,14 @@
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
-				FBC1D69D1CA3D30A00319633 /* ZhRegisterService.m in Sources */,
 				FB0BC5E01C97BAFB0014DA54 /* ASIInputStream.m in Sources */,
 				FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */,
+				FB4398951CAB80E3005E7B4E /* ZhRegisterViewController.m in Sources */,
 				FB0BC5DD1C97BAFB0014DA54 /* ASIDownloadCache.m in Sources */,
 				FB07B7571C8D8CB200501747 /* MMDrawerVisualState.m in Sources */,
 				FB0BC5DF1C97BAFB0014DA54 /* ASIHTTPRequest.m in Sources */,
 				FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */,
+				FB4398A51CABBE18005E7B4E /* ZhCountBtn.m in Sources */,
 				FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */,
 				FB59BDED1CA3E2C700FD5EFA /* MMProgressHUDViewController.m in Sources */,
 				FB0BC5E21C97BAFB0014DA54 /* Reachability.m in Sources */,
@@ -963,6 +1045,8 @@
 				FB0BC5DB1C97BAFB0014DA54 /* ASIDataCompressor.m in Sources */,
 				FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */,
 				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
+				FB43989D1CAB811E005E7B4E /* ZhLoginService.m in Sources */,
+				FB4398AB1CABED7A005E7B4E /* ZhMainViewManager.m in Sources */,
 				FB59BE0D1CA3ED4E00FD5EFA /* SBJsonParser.m in Sources */,
 				FB59BDEC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m in Sources */,
 				FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */,
@@ -1110,6 +1194,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZhGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.ZhGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1123,6 +1208,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZhGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlongame.ZhGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
