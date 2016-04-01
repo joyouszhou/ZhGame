@@ -416,5 +416,8 @@
 -(void)closeMySelf
 {
     [[ZhMainViewManager shareInstance] showMainView];
+    [self.phoneNumTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    [self.NickName resignFirstResponder];
 }
 @end

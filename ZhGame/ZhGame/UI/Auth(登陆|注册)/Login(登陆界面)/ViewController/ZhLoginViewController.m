@@ -375,6 +375,8 @@
 -(void)closeMySelf
 {
     [[ZhMainViewManager shareInstance] showMainView];
+    [self.txtPassword resignFirstResponder];
+    [self.txtUserId resignFirstResponder];
 }
 #pragma mark 登陆按钮click
 /**

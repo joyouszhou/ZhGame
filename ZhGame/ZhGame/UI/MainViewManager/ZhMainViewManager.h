@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MyselfListViewController.h"
 #import "ZhLoginViewController.h"
 #import "Zh1ViewController.h"
 #import "Zh2ViewController.h"
@@ -17,13 +16,14 @@
 #import "ZhRootViewController.h"
 #import "MMDrawerController.h"
 #import "Zh5TableViewController.h"
+#import "ZhUserCenterViewController.h"
 #import "ZhPublicDef.h"
 
 @interface ZhMainViewManager : NSObject
 
 
 @property (nonatomic,strong)            MMDrawerController      *drawerController;
-@property (nonatomic, strong)           ZhTabBarController      *tabBar;
+
 
 #pragma mark - 实例化
 +(instancetype)shareInstance;

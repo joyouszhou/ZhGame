@@ -7,6 +7,17 @@
 //
 
 #import "ZhMainViewManager.h"
+#import "ZhRootViewController.h"
+@interface ZhMainViewManager()
+
+@property (nonatomic, strong)   UINavigationController * navFirst;
+@property (nonatomic, strong)   UINavigationController * nav2;
+@property (nonatomic, strong)   UINavigationController * nav3;
+@property (nonatomic, strong)   UINavigationController * navmyself;
+@property (nonatomic, strong)   UINavigationController * navtabBar;
+@property (nonatomic, strong)   ZhTabBarController      *tabBar;
+@end
+
 
 @implementation ZhMainViewManager
 
@@ -54,65 +65,71 @@
  */
 -(void)doShowTabbarView
 {
-    NSMutableArray * array = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"tab_buddy_nor.png"],[UIImage imageNamed:@"tab_me_nor.png"],[UIImage imageNamed:@"tab_qworld_nor.png"],[UIImage imageNamed:@"tab_recent_nor.png"], nil];
-    NSMutableArray * selectedArray = [[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"tab_buddy_press.png"],[UIImage imageNamed:@"tab_me_press.png"],[UIImage imageNamed:@"tab_qworld_press.png"],[UIImage imageNamed:@"tab_recent_press.png"], nil];
-    NSMutableArray * titles = [[NSMutableArray alloc]initWithObjects:@"首页",@"消息",@"发现",@"个人", nil];
-    
-    
-    Zh1ViewController * vc1 = [[Zh1ViewController alloc]init];
-    Zh2ViewController * vc2 = [[Zh2ViewController alloc]init];
-    Zh3ViewController * vc3 = [[Zh3ViewController alloc]init];
-    Zh4ViewController * vc4 = [[Zh4ViewController alloc]init];
-    MyselfListViewController *vc5 = [[MyselfListViewController alloc] init];
-    
-    
-    ZhRootViewController * navigationController = [[ZhRootViewController alloc]initWithRootViewController:vc1];
-    ZhRootViewController * leftSideNavController = [[ZhRootViewController alloc]initWithRootViewController:vc5];
-    
-    UINavigationController * nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
-    UINavigationController * nav3 = [[UINavigationController alloc]initWithRootViewController:vc3];
-    
-    
-    [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
-    [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
-    
-    self.drawerController = [[MMDrawerController alloc]
-                             initWithCenterViewController:navigationController
-                             leftDrawerViewController:leftSideNavController
-                             rightDrawerViewController:nil];
-    [self.drawerController setShowsShadow:NO];
-    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-    [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModePanningNavigationBar];
-    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-    
-    
-    
-    [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-        //         MMDrawerControllerDrawerVisualStateBlock block;
-        //         block = [[MMExampleDrawerVisualStateManager sharedManager]
-        //                  drawerVisualStateBlockForDrawerSide:drawerSide];
-        //         if(block){
-        //             block(drawerController, drawerSide, percentVisible);
-        //         }
-    }];
-    
-    
-    
-    
-    self.tabBar = [[ZhTabBarController alloc]initWithTabBarSelectedImages:selectedArray normalImages:array titles:titles];
-    self.tabBar.showCenterItem = YES;
-    self.tabBar.centerItemImage = [UIImage imageNamed:@"btn_release.png"];
-    self.tabBar.viewControllers = @[self.drawerController,nav2,nav3,vc4];
-    self.tabBar.textColor = [UIColor redColor];
-    [self.tabBar tabBarBadgeValue:500 item:2];
-    [self.tabBar tabBarBadgeValue:3 item:1];
-    
-    self.tabBar.zh_centerViewController = [[Zh5TableViewController alloc] init];
-    
-    [[UIApplication sharedApplication].delegate window].rootViewController = self.tabBar;
+
+    [[UIApplication sharedApplication].delegate window].rootViewController =self.tabBar;
     
     [[[UIApplication sharedApplication].delegate window] makeKeyAndVisible];
+}
+
+-(UINavigationController *)navFirst
+{
+    if (_navFirst ) {
+        return _navFirst;
+    }
+    Zh1ViewController *vc = [[Zh1ViewController alloc] init];
+    _navFirst = [[UINavigationController alloc] initWithRootViewController:vc];
+    return _navFirst;
+}
+-(UINavigationController *)nav2
+{
+    if (_nav2) {
+        return _nav2;
+    }
+    _nav2 = [[UINavigationController alloc] initWithRootViewController:[[Zh2ViewController alloc] init]];
+    return _nav2;
+}
+-(UINavigationController *)nav3
+{
+    if (_nav3) {
+        return _nav3;
+    }
+    _nav3 = [[UINavigationController alloc] initWithRootViewController:[[Zh3ViewController alloc] init]];
+    return _nav3;
+}
+-(UINavigationController *)navmyself
+{
+    if (_navmyself) {
+        return _navmyself;
+    }
+    _navmyself = [[UINavigationController alloc] initWithRootViewController:[[ZhUserCenterViewController alloc] init]];
+    
+    return _navmyself;
+}
+-(ZhTabBarController *)tabBar
+{
+    if (_tabBar) {
+        return _tabBar;
+    }
+    
+    NSMutableArray * array = [[NSMutableArray alloc]initWithObjects:
+                              [UIImage imageNamed:@"tab_buddy_nor.png"],
+                              [UIImage imageNamed:@"tab_me_nor.png"],
+                              [UIImage imageNamed:@"tab_qworld_nor.png"],
+                              [UIImage imageNamed:@"tab_recent_nor.png"],
+                              nil];
+    NSMutableArray * selectedArray = [[NSMutableArray alloc]initWithObjects:
+                                      [UIImage imageNamed:@"tab_buddy_press.png"],
+                                      [UIImage imageNamed:@"tab_me_press.png"],
+                                      [UIImage imageNamed:@"tab_qworld_press.png"],
+                                      [UIImage imageNamed:@"tab_recent_press.png"],
+                                      nil];
+    NSMutableArray * titles = [[NSMutableArray alloc]initWithObjects:@"首页",@"消息",@"发现",@"个人", nil];
+
+    _tabBar = [[ZhTabBarController alloc]initWithTabBarSelectedImages:selectedArray normalImages:array titles:titles];
+    _tabBar.showCenterItem = NO;
+    _tabBar.viewControllers = @[self.navFirst,self.nav2,self.nav3,self.navmyself];
+    _tabBar.textColor = [UIColor redColor];
+    return _tabBar;
 }
 
 @end

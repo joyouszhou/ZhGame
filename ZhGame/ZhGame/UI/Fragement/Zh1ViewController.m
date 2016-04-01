@@ -30,11 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.modalPresentationCapturesStatusBarAppearance = NO;
     MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
     [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
-    
-    
+    self.navigationController.view.backgroundColor = [UIColor whiteColor];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
     _backTableView=[[UITableView alloc]init];
     _backTableView.delegate=self;
@@ -49,8 +50,8 @@
     _dataSource=@[@[@"back_sss.png"],
                   @[@"back_sss.png"]];
     
-    UIImage *image=[UIImage imageNamed:@"male_001"];
-    _width=image.size.width/5;
+//    UIImage *image=[UIImage imageNamed:@"male_001"];
+//    _width=image.size.width/5;
     
     
 }

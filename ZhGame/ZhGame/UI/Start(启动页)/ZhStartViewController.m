@@ -15,7 +15,6 @@
 @interface ZhStartViewController ()<ZhCountBtnDeleget>
 @property (nonatomic, strong)           UIImageView             *backgroundImageView;       //背景图片
 @property (nonatomic, strong)           ZhCountBtn              *CloseBtn;                  //关闭按钮
-
 @end
 
 @implementation ZhStartViewController
@@ -43,8 +42,8 @@
     setting.strSuffix = @"";
     setting.strCommon = @"关闭";
     setting.indexStart = 4;
-    setting.colorDisable = [UIColor whiteColor];
-    setting.colorTitle =[UIColor blackColor];
+    setting.colorDisable = [UIColor grayColor];
+    setting.colorTitle =[UIColor whiteColor];
     [_CloseBtn startWithSetting:setting];
 }
 
@@ -66,7 +65,7 @@
         return _CloseBtn;
     }
     _CloseBtn = [[ZhCountBtn alloc] init];
-    _CloseBtn.layer.cornerRadius = 5;
+    _CloseBtn.layer.cornerRadius = 0.4;
     _CloseBtn.layer.masksToBounds = YES;
     _CloseBtn.delegate = self;
     [_CloseBtn addTarget:self action:@selector(doCloseView) forControlEvents:UIControlEventTouchUpInside];

@@ -8,7 +8,6 @@
 
 #import "ZhRootViewController.h"
 #import "AppDelegate.h"
-#import "MyselfListViewController.h"
 #import "UIViewController+MMDrawerController.h"
 
 @interface ZhRootViewController ()

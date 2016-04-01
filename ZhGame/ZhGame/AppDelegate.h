@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZhTabBarController.h"
-#import "MyselfListViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) ZhTabBarController * tabBar;
-@property (nonatomic, strong) MyselfListViewController *leftVc;
+
 
 @end
 

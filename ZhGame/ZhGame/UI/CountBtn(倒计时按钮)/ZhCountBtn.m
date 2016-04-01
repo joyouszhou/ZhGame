@@ -28,8 +28,8 @@
     if (setting.indexStart > 0)
     {
         self.backgroundColor = setting.colorDisable ? setting.colorDisable : [UIColor lightGrayColor];
-        [self setEnabled:NO];
-        NSString* title = [NSString stringWithFormat:@"   %@%d%@   ",(setting.strPrefix ? setting.strPrefix : @""),setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
+//        [self setEnabled:NO];
+        NSString* title = [NSString stringWithFormat:@"   %@%d%@   ",(setting.strPrefix ? setting.strPrefix : @"关闭"),setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
         NSLog(@"%@",title);
         [self setTitle:title forState:UIControlStateNormal];
         [self setTitle:title forState:UIControlStateDisabled];

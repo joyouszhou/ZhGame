@@ -34,6 +34,9 @@
 		FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */; };
 		FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */; };
 		FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */; };
+		FB38E3321CAD1835007E7A00 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */; };
+		FB38E3331CAD1835007E7A00 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */; };
+		FB38E3341CAD1835007E7A00 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */; };
 		FB4398941CAB80E3005E7B4E /* ZhRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */; };
 		FB4398951CAB80E3005E7B4E /* ZhRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398931CAB80E3005E7B4E /* ZhRegisterViewController.m */; };
 		FB43989A1CAB8109005E7B4E /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398991CAB8109005E7B4E /* ZhLoginViewController.m */; };
@@ -65,7 +68,6 @@
 		FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE091CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m */; };
 		FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */; };
 		FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */; };
-		FB6B58011CA92CCC005B06C0 /* ZhUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */; };
 		FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
@@ -104,9 +106,17 @@
 		FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8211C8D6DF5000C8119 /* View+MASAdditions.m */; };
 		FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */; };
 		FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */; };
-		FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */; };
 		FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */; };
 		FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */; };
+		FBD8D9661CACD54C003EA6A3 /* UIImageView+ZhWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD8D9651CACD54C003EA6A3 /* UIImageView+ZhWebImage.m */; };
+		FBD8D96A1CACD7A0003EA6A3 /* ZhUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD8D9691CACD7A0003EA6A3 /* ZhUserInfo.m */; };
+		FBD8D96E1CACE94C003EA6A3 /* ZhlabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD8D96D1CACE94C003EA6A3 /* ZhlabView.m */; };
+		FBFB1A271CAE1D4B00E4CFAF /* ZhUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A261CAE1D4B00E4CFAF /* ZhUserCenterViewController.m */; };
+		FBFB1A311CAE1F2C00E4CFAF /* ZhUserCenterItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A301CAE1F2B00E4CFAF /* ZhUserCenterItemModel.m */; };
+		FBFB1A341CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A331CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m */; };
+		FBFB1A3A1CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */; };
+		FBFB1A441CAE709200E4CFAF /* icon-list01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */; };
+		FBFB1A461CAE72C900E4CFAF /* icon-arrow1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +185,12 @@
 		FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pd_sdk_dialog_pwd@2x.png"; sourceTree = "<group>"; };
 		FB206E5F1C8EBB4B009F7681 /* ZhAuthUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhAuthUtilViewController.h; sourceTree = "<group>"; };
 		FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhAuthUtilViewController.m; sourceTree = "<group>"; };
+		FB38E32C1CAD1835007E7A00 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		FB38E32E1CAD1835007E7A00 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		FB38E3301CAD1835007E7A00 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 		FB43988F1CAB80E3005E7B4E /* ZhRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterService.h; sourceTree = "<group>"; };
 		FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterService.m; sourceTree = "<group>"; };
 		FB4398921CAB80E3005E7B4E /* ZhRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterViewController.h; sourceTree = "<group>"; };
@@ -236,8 +252,6 @@
 		FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		FB59BE1C1CA3EE4B00FD5EFA /* ZhPublicDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhPublicDef.h; sourceTree = "<group>"; };
 		FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhPublicDef.m; sourceTree = "<group>"; };
-		FB6B57FF1CA92CCC005B06C0 /* ZhUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserInfoView.h; sourceTree = "<group>"; };
-		FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserInfoView.m; sourceTree = "<group>"; };
 		FB6B58061CA9391B005B06C0 /* ZhMyselfService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhMyselfService.h; sourceTree = "<group>"; };
 		FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhMyselfService.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,12 +321,26 @@
 		FBA7F8241C8D6DF5000C8119 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		FBA7F8261C8D6DF5000C8119 /* ZhRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRootViewController.h; sourceTree = "<group>"; };
 		FBA7F8271C8D6DF5000C8119 /* ZhRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRootViewController.m; sourceTree = "<group>"; };
-		FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfListViewController.h; sourceTree = "<group>"; };
-		FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfListViewController.m; sourceTree = "<group>"; };
 		FBA7F82F1C8D6DF5000C8119 /* ZhTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarController.h; sourceTree = "<group>"; };
 		FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarController.m; sourceTree = "<group>"; };
 		FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhTabBarView.h; sourceTree = "<group>"; };
 		FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhTabBarView.m; sourceTree = "<group>"; };
+		FBD8D9641CACD54C003EA6A3 /* UIImageView+ZhWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZhWebImage.h"; sourceTree = "<group>"; };
+		FBD8D9651CACD54C003EA6A3 /* UIImageView+ZhWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZhWebImage.m"; sourceTree = "<group>"; };
+		FBD8D9681CACD7A0003EA6A3 /* ZhUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserInfo.h; sourceTree = "<group>"; };
+		FBD8D9691CACD7A0003EA6A3 /* ZhUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserInfo.m; sourceTree = "<group>"; };
+		FBD8D96C1CACE94C003EA6A3 /* ZhlabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhlabView.h; sourceTree = "<group>"; };
+		FBD8D96D1CACE94C003EA6A3 /* ZhlabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhlabView.m; sourceTree = "<group>"; };
+		FBFB1A251CAE1D4B00E4CFAF /* ZhUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserCenterViewController.h; sourceTree = "<group>"; };
+		FBFB1A261CAE1D4B00E4CFAF /* ZhUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserCenterViewController.m; sourceTree = "<group>"; };
+		FBFB1A2F1CAE1F2B00E4CFAF /* ZhUserCenterItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserCenterItemModel.h; sourceTree = "<group>"; };
+		FBFB1A301CAE1F2B00E4CFAF /* ZhUserCenterItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserCenterItemModel.m; sourceTree = "<group>"; };
+		FBFB1A321CAE3B3300E4CFAF /* ZhUserCenterSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserCenterSectionModel.h; sourceTree = "<group>"; };
+		FBFB1A331CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserCenterSectionModel.m; sourceTree = "<group>"; };
+		FBFB1A381CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserCenterInfoCell.h; sourceTree = "<group>"; };
+		FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserCenterInfoCell.m; sourceTree = "<group>"; };
+		FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-list01@2x.png"; sourceTree = "<group>"; };
+		FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-arrow1@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +377,7 @@
 		FB07B74A1C8D8CB200501747 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FBD8D9631CACD542003EA6A3 /* WebImage */,
 				FB59BDF21CA3ED4E00FD5EFA /* SBJson */,
 				FB59BDB41CA3DF7300FD5EFA /* HD */,
 				FB0BC5C31C97BAFB0014DA54 /* ASIHTTP */,
@@ -607,8 +636,8 @@
 		FB6B57FE1CA92CCC005B06C0 /* View(个人信息) */ = {
 			isa = PBXGroup;
 			children = (
-				FB6B57FF1CA92CCC005B06C0 /* ZhUserInfoView.h */,
-				FB6B58001CA92CCC005B06C0 /* ZhUserInfoView.m */,
+				FBFB1A381CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.h */,
+				FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */,
 			);
 			name = "View(个人信息)";
 			path = View;
@@ -627,6 +656,7 @@
 			isa = PBXGroup;
 			children = (
 				FB0BC5F41C97D3060014DA54 /* Framework */,
+				FBD8D9671CACD794003EA6A3 /* UserInfo */,
 				FB59BE1B1CA3EE4B00FD5EFA /* Config */,
 				FB0BC5F31C97D2E70014DA54 /* Utils */,
 				FB07B74A1C8D8CB200501747 /* ThirdLib */,
@@ -694,6 +724,8 @@
 		FBA7F7DD1C8D6DED000C8119 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */,
+				FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */,
 				FB4398A61CABD44E005E7B4E /* startImage.png */,
 				FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */,
 				FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */,
@@ -720,6 +752,7 @@
 		FBA7F7F81C8D6DF5000C8119 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FBD8D96B1CACE931003EA6A3 /* labView */,
 				FB4398A81CABED5E005E7B4E /* MainViewManager */,
 				FB4398A21CABBE18005E7B4E /* CountBtn(倒计时按钮) */,
 				FB43989E1CABBAC2005E7B4E /* Start(启动页) */,
@@ -805,6 +838,7 @@
 		FBA7F8281C8D6DF5000C8119 /* MyselfPage(个人) */ = {
 			isa = PBXGroup;
 			children = (
+				FBFB1A281CAE1EF300E4CFAF /* Model */,
 				FB6B58051CA9391B005B06C0 /* Service */,
 				FB6B57FE1CA92CCC005B06C0 /* View(个人信息) */,
 				FBA7F8291C8D6DF5000C8119 /* Controller */,
@@ -815,8 +849,8 @@
 		FBA7F8291C8D6DF5000C8119 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FBA7F82C1C8D6DF5000C8119 /* MyselfListViewController.h */,
-				FBA7F82D1C8D6DF5000C8119 /* MyselfListViewController.m */,
+				FBFB1A251CAE1D4B00E4CFAF /* ZhUserCenterViewController.h */,
+				FBFB1A261CAE1D4B00E4CFAF /* ZhUserCenterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -824,12 +858,57 @@
 		FBA7F82E1C8D6DF5000C8119 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				FB38E32C1CAD1835007E7A00 /* RDVTabBar.h */,
+				FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */,
+				FB38E32E1CAD1835007E7A00 /* RDVTabBarController.h */,
+				FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */,
+				FB38E3301CAD1835007E7A00 /* RDVTabBarItem.h */,
+				FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */,
 				FBA7F82F1C8D6DF5000C8119 /* ZhTabBarController.h */,
 				FBA7F8301C8D6DF5000C8119 /* ZhTabBarController.m */,
 				FBA7F8311C8D6DF5000C8119 /* ZhTabBarView.h */,
 				FBA7F8321C8D6DF5000C8119 /* ZhTabBarView.m */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FBD8D9631CACD542003EA6A3 /* WebImage */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8D9641CACD54C003EA6A3 /* UIImageView+ZhWebImage.h */,
+				FBD8D9651CACD54C003EA6A3 /* UIImageView+ZhWebImage.m */,
+			);
+			path = WebImage;
+			sourceTree = "<group>";
+		};
+		FBD8D9671CACD794003EA6A3 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8D9681CACD7A0003EA6A3 /* ZhUserInfo.h */,
+				FBD8D9691CACD7A0003EA6A3 /* ZhUserInfo.m */,
+			);
+			name = UserInfo;
+			path = ZhGame/UserInfo;
+			sourceTree = "<group>";
+		};
+		FBD8D96B1CACE931003EA6A3 /* labView */ = {
+			isa = PBXGroup;
+			children = (
+				FBD8D96C1CACE94C003EA6A3 /* ZhlabView.h */,
+				FBD8D96D1CACE94C003EA6A3 /* ZhlabView.m */,
+			);
+			path = labView;
+			sourceTree = "<group>";
+		};
+		FBFB1A281CAE1EF300E4CFAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB1A2F1CAE1F2B00E4CFAF /* ZhUserCenterItemModel.h */,
+				FBFB1A301CAE1F2B00E4CFAF /* ZhUserCenterItemModel.m */,
+				FBFB1A321CAE3B3300E4CFAF /* ZhUserCenterSectionModel.h */,
+				FBFB1A331CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -941,6 +1020,7 @@
 				FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */,
 				FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */,
 				FB4398A71CABD44E005E7B4E /* startImage.png in Resources */,
+				FBFB1A441CAE709200E4CFAF /* icon-list01@2x.png in Resources */,
 				FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */,
 				FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */,
 				FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */,
@@ -950,6 +1030,7 @@
 				FBA7F7EE1C8D6DED000C8119 /* choose.png in Resources */,
 				FBA7F7F01C8D6DED000C8119 /* tab_buddy_nor@2x.png in Resources */,
 				FBA7F7B71C8D6DAB000C8119 /* Assets.xcassets in Resources */,
+				FBFB1A461CAE72C900E4CFAF /* icon-arrow1@2x.png in Resources */,
 				FBA7F7F41C8D6DED000C8119 /* tab_qworld_nor@2x.png in Resources */,
 				FBA7F7EB1C8D6DED000C8119 /* addMore.png in Resources */,
 				FB206E3F1C8E80C7009F7681 /* logo.png in Resources */,
@@ -986,14 +1067,18 @@
 				FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */,
 				FB59BDF11CA3E2C700FD5EFA /* MSKeyBoardManager.m in Sources */,
 				FB43989A1CAB8109005E7B4E /* ZhLoginViewController.m in Sources */,
+				FBD8D96E1CACE94C003EA6A3 /* ZhlabView.m in Sources */,
 				FB0BC5DC1C97BAFB0014DA54 /* ASIDataDecompressor.m in Sources */,
+				FB38E3331CAD1835007E7A00 /* RDVTabBarController.m in Sources */,
 				FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */,
+				FBFB1A341CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m in Sources */,
 				FB59BE111CA3ED4E00FD5EFA /* SBJsonStreamParserState.m in Sources */,
 				FB59BE101CA3ED4E00FD5EFA /* SBJsonStreamParserAdapter.m in Sources */,
 				FB0BC5DA1C97BAFB0014DA54 /* ASIAuthenticationDialog.m in Sources */,
 				FBA7F8331C8D6DF5000C8119 /* ZhTabBarButton.m in Sources */,
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
 				FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */,
+				FBFB1A271CAE1D4B00E4CFAF /* ZhUserCenterViewController.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
 				FB59BDF01CA3E2C700FD5EFA /* MMVectorImage.m in Sources */,
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
@@ -1005,12 +1090,13 @@
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
 				FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */,
 				FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */,
-				FBA7F8471C8D6DF5000C8119 /* MyselfListViewController.m in Sources */,
 				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
 				FBA7F8431C8D6DF5000C8119 /* View+MASAdditions.m in Sources */,
 				FB59BDEF1CA3E2C700FD5EFA /* MMRadialProgressView.m in Sources */,
+				FBFB1A3A1CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m in Sources */,
 				FB4398941CAB80E3005E7B4E /* ZhRegisterService.m in Sources */,
 				FB59BDE91CA3E2C700FD5EFA /* MMProgressHUD.m in Sources */,
+				FBD8D96A1CACD7A0003EA6A3 /* ZhUserInfo.m in Sources */,
 				FB59BE141CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m in Sources */,
 				FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				FB59BE131CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m in Sources */,
@@ -1024,7 +1110,7 @@
 				FB0BC5F71C97D33E0014DA54 /* ZhStringUtils.m in Sources */,
 				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
 				FB0BC5E11C97BAFB0014DA54 /* ASINetworkQueue.m in Sources */,
-				FB6B58011CA92CCC005B06C0 /* ZhUserInfoView.m in Sources */,
+				FBFB1A311CAE1F2C00E4CFAF /* ZhUserCenterItemModel.m in Sources */,
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
@@ -1039,6 +1125,7 @@
 				FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */,
 				FB59BDED1CA3E2C700FD5EFA /* MMProgressHUDViewController.m in Sources */,
 				FB0BC5E21C97BAFB0014DA54 /* Reachability.m in Sources */,
+				FB38E3341CAD1835007E7A00 /* RDVTabBarItem.m in Sources */,
 				FB59BE121CA3ED4E00FD5EFA /* SBJsonStreamWriter.m in Sources */,
 				FB0BC5DE1C97BAFB0014DA54 /* ASIFormDataRequest.m in Sources */,
 				FBA7F83C1C8D6DF5000C8119 /* MASConstraint.m in Sources */,
@@ -1046,9 +1133,11 @@
 				FB07B7551C8D8CB200501747 /* MMDrawerBarButtonItem.m in Sources */,
 				FBA7F8481C8D6DF5000C8119 /* ZhTabBarController.m in Sources */,
 				FB43989D1CAB811E005E7B4E /* ZhLoginService.m in Sources */,
+				FB38E3321CAD1835007E7A00 /* RDVTabBar.m in Sources */,
 				FB4398AB1CABED7A005E7B4E /* ZhMainViewManager.m in Sources */,
 				FB59BE0D1CA3ED4E00FD5EFA /* SBJsonParser.m in Sources */,
 				FB59BDEC1CA3E2C700FD5EFA /* MMProgressHUDOverlayView.m in Sources */,
+				FBD8D9661CACD54C003EA6A3 /* UIImageView+ZhWebImage.m in Sources */,
 				FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */,
 				FB59BE0E1CA3ED4E00FD5EFA /* SBJsonStreamParser.m in Sources */,
 			);

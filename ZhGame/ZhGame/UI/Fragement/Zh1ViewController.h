@@ -12,7 +12,7 @@
 
 @property (nonatomic,strong)UITableView *backTableView;
 @property (nonatomic,strong)UIImageView *secondTableView;
-
+@property (nonatomic,strong)UIButton    *ssss;
 
 
 @end

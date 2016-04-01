@@ -7,6 +7,7 @@
 //
 
 #import "Zh2ViewController.h"
+#import "Masonry.h"
 
 @interface Zh2ViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.view.backgroundColor =  [UIColor colorWithRed:221 green:211 blue:254 alpha:0.9];
+    
+    UIButton *b = [UIButton buttonWithType:UIButtonTypeSystem];
+    b.backgroundColor = [UIColor blueColor];
+    b.frame = CGRectMake(0, 0, 200, 200);
+    [self.view addSubview:b];
+    
 }
 
 - (void)didReceiveMemoryWarning {

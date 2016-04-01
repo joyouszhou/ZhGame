@@ -15,4 +15,10 @@ typedef void (^ZhMyselfInfo)(BOOL isLogin,NSString *title);
 
 -(void)ZhGetLoginStats:(ZhMyselfInfo)info;
 
+/**
+ *  读取用户信息
+ */
+-(void)ZhGetUserInfo:(ZhMyselfInfo)info;
+
+
 @end
