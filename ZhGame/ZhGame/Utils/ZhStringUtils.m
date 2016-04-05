@@ -74,4 +74,27 @@
     }
     return YES;
 }
+
+#pragma mark - 获取字体的大小
+/**
+ *  获取文字的大小
+ *
+ *  @param str  字符串
+ *  @param font 字体大小
+ *
+ *  @return 字体的大小
+ */
+
++(CGSize)sizeForString:(NSString *)str withFont:(UIFont *)font
+{
+    CGRect titleRect = [str boundingRectWithSize:CGSizeMake(FLT_MAX, FLT_MAX)
+                                           options:NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{NSFontAttributeName : font}
+                                           context:nil];
+    
+    return CGSizeMake(titleRect.size.width,
+                      titleRect.size.height);
+}
+
+
 @end

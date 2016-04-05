@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "UIKit/UIKit.h"
 @interface ZhStringUtils : NSObject
 
 #pragma mark - 检查手机号有效性
@@ -50,5 +50,18 @@
  *  @return YES 合法昵称  NO 非昵称
  */
 +(BOOL)isNickName:(NSString *)nickname;
+
+
+#pragma mark - 获取字体的大小
+/**
+ *  获取文字的大小
+ *
+ *  @param str  字符串
+ *  @param font 字体大小
+ *
+ *  @return 字体的大小
+ */
+
++(CGSize)sizeForString:(NSString *)str withFont:(UIFont *)font;
 
 @end

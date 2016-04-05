@@ -117,6 +117,9 @@
 		FBFB1A3A1CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */; };
 		FBFB1A441CAE709200E4CFAF /* icon-list01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */; };
 		FBFB1A461CAE72C900E4CFAF /* icon-arrow1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */; };
+		FBFB1A7B1CB3873100E4CFAF /* ZhUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A7A1CB3873100E4CFAF /* ZhUserHeaderView.m */; };
+		FBFB1A7E1CB3877800E4CFAF /* ZhHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB1A7D1CB3877800E4CFAF /* ZhHeaderModel.m */; };
+		FBFB1A801CB393EB00E4CFAF /* back_header.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFB1A7F1CB393EB00E4CFAF /* back_header.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,6 +344,11 @@
 		FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserCenterInfoCell.m; sourceTree = "<group>"; };
 		FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-list01@2x.png"; sourceTree = "<group>"; };
 		FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-arrow1@2x.png"; sourceTree = "<group>"; };
+		FBFB1A791CB3873100E4CFAF /* ZhUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserHeaderView.h; sourceTree = "<group>"; };
+		FBFB1A7A1CB3873100E4CFAF /* ZhUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserHeaderView.m; sourceTree = "<group>"; };
+		FBFB1A7C1CB3877800E4CFAF /* ZhHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhHeaderModel.h; sourceTree = "<group>"; };
+		FBFB1A7D1CB3877800E4CFAF /* ZhHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhHeaderModel.m; sourceTree = "<group>"; };
+		FBFB1A7F1CB393EB00E4CFAF /* back_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_header.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,6 +646,8 @@
 			children = (
 				FBFB1A381CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.h */,
 				FBFB1A391CAE3DDA00E4CFAF /* ZhUserCenterInfoCell.m */,
+				FBFB1A791CB3873100E4CFAF /* ZhUserHeaderView.h */,
+				FBFB1A7A1CB3873100E4CFAF /* ZhUserHeaderView.m */,
 			);
 			name = "View(个人信息)";
 			path = View;
@@ -724,6 +734,7 @@
 		FBA7F7DD1C8D6DED000C8119 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FBFB1A7F1CB393EB00E4CFAF /* back_header.png */,
 				FBFB1A451CAE72C900E4CFAF /* icon-arrow1@2x.png */,
 				FBFB1A431CAE709200E4CFAF /* icon-list01@2x.png */,
 				FB4398A61CABD44E005E7B4E /* startImage.png */,
@@ -907,6 +918,8 @@
 				FBFB1A301CAE1F2B00E4CFAF /* ZhUserCenterItemModel.m */,
 				FBFB1A321CAE3B3300E4CFAF /* ZhUserCenterSectionModel.h */,
 				FBFB1A331CAE3B3300E4CFAF /* ZhUserCenterSectionModel.m */,
+				FBFB1A7C1CB3877800E4CFAF /* ZhHeaderModel.h */,
+				FBFB1A7D1CB3877800E4CFAF /* ZhHeaderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1017,6 +1030,7 @@
 				FB206E561C8EA92C009F7681 /* login_regner_phone@2x.png in Resources */,
 				FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */,
 				FBA7F7F31C8D6DED000C8119 /* tab_me_press@2x.png in Resources */,
+				FBFB1A801CB393EB00E4CFAF /* back_header.png in Resources */,
 				FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */,
 				FB206E551C8EA92C009F7681 /* login_regner_phone.png in Resources */,
 				FB4398A71CABD44E005E7B4E /* startImage.png in Resources */,
@@ -1079,6 +1093,7 @@
 				FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */,
 				FB59BE161CA3ED4E00FD5EFA /* SBJsonUTF8Stream.m in Sources */,
 				FBFB1A271CAE1D4B00E4CFAF /* ZhUserCenterViewController.m in Sources */,
+				FBFB1A7B1CB3873100E4CFAF /* ZhUserHeaderView.m in Sources */,
 				FBA7F8491C8D6DF5000C8119 /* ZhTabBarView.m in Sources */,
 				FB59BDF01CA3E2C700FD5EFA /* MMVectorImage.m in Sources */,
 				FB206E3D1C8E77E5009F7681 /* LHCustomModalTransition.m in Sources */,
@@ -1140,6 +1155,7 @@
 				FBD8D9661CACD54C003EA6A3 /* UIImageView+ZhWebImage.m in Sources */,
 				FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */,
 				FB59BE0E1CA3ED4E00FD5EFA /* SBJsonStreamParser.m in Sources */,
+				FBFB1A7E1CB3877800E4CFAF /* ZhHeaderModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

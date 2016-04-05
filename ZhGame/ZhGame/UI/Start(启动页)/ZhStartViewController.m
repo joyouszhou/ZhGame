@@ -33,8 +33,8 @@
     [self.view addSubview:self.CloseBtn];
     [self.CloseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.view.mas_top).with.offset(40);
-        make.left.mas_equalTo(self.view.mas_right).with.offset(-60);
-        make.width.mas_equalTo(40);
+        make.left.mas_equalTo(self.view.mas_right).with.offset(-90);
+        make.width.mas_equalTo(80);
         make.height.mas_equalTo(20);
     }];
     ZhCountBtnSetting* setting = [[ZhCountBtnSetting alloc] init];
@@ -107,7 +107,7 @@
 - (void)downloadImage:(NSString *)imageDir;
 {
 
-    NSData *imagedata = [NSData dataWithContentsOfURL:API_IMAGER_URL]; //如果本地缓存没有，保存图片
+    NSData *imagedata = [NSData dataWithContentsOfURL:API_IMAGER_URL(@"start.png")]; //如果本地缓存没有，保存图片
     if (imagedata) {
         if ([[NSFileManager defaultManager] fileExistsAtPath:imageDir])
         {

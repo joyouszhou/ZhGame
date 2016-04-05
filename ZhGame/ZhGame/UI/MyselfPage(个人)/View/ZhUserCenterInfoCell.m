@@ -34,13 +34,12 @@
 - (void)updateUI
 {
     [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+//    self.contentView.backgroundColor = [UIColor colorWithRed:221 green:211 blue:254 alpha:0.9];
     
-    UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(Actiondo:)];
+//    self.contentView.layer.borderColor=[[UIColor blackColor] CGColor];
     
-    [self.contentView addGestureRecognizer:tapGesture];
-    
-    self.contentView.layer.cornerRadius = 5;
-    
+    self.contentView.layer.borderWidth=0.1;
     //如果有图片
     if (self.item.titleImage) {
         [self setupTitleImageView];
@@ -198,7 +197,7 @@
     [self.TitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.contentView.mas_top);
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.left.mas_equalTo(self.titleImageView.mas_right).with.offset(15);
+        make.left.mas_equalTo(self.titleImageView?self.titleImageView.mas_right:self.contentView.mas_left).with.offset(15);
         make.size.mas_equalTo([self sizeForTitle:self.item.titleName withFont:self.TitleLabel.font]);
     }];
 }

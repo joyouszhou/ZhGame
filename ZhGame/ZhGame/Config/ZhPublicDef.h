@@ -22,7 +22,7 @@
 
 
 #define API_BASE_URL(_URL_) [NSURL URLWithString:[NSString stringWithFormat:@"%@/wechat/api/%@",ZH_SERVER_DOMIAN,_URL_]]
-#define API_IMAGER_URL      [NSURL URLWithString:[NSString stringWithFormat:@"%@/iosimage/start.png",ZH_SERVER_DOMIAN]]
+#define API_IMAGER_URL(_IMG_)      [NSURL URLWithString:[NSString stringWithFormat:@"%@/iosimage/%@",ZH_SERVER_DOMIAN,_IMG_]]
 
 
 
