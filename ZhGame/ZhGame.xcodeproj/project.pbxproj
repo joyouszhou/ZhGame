@@ -34,6 +34,13 @@
 		FB206E591C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E571C8EAA8C009F7681 /* pd_sdk_dialog_pwd.png */; };
 		FB206E5A1C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */; };
 		FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */; };
+		FB2834691CB60A28005FF499 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28345E1CB60A28005FF499 /* FMDatabase.m */; };
+		FB28346A1CB60A28005FF499 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2834601CB60A28005FF499 /* FMDatabaseAdditions.m */; };
+		FB28346B1CB60A28005FF499 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2834621CB60A28005FF499 /* FMDatabasePool.m */; };
+		FB28346C1CB60A28005FF499 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2834641CB60A28005FF499 /* FMDatabaseQueue.m */; };
+		FB28346D1CB60A28005FF499 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2834671CB60A28005FF499 /* FMResultSet.m */; };
+		FB28346E1CB60A28005FF499 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2834681CB60A28005FF499 /* Info.plist */; };
+		FB2834731CB635B9005FF499 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2834721CB635B9005FF499 /* libsqlite3.tbd */; };
 		FB38E3321CAD1835007E7A00 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */; };
 		FB38E3331CAD1835007E7A00 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */; };
 		FB38E3341CAD1835007E7A00 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */; };
@@ -69,14 +76,15 @@
 		FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE0B1CA3ED4E00FD5EFA /* SBJsonWriter.m */; };
 		FB59BE1E1CA3EE4B00FD5EFA /* ZhPublicDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */; };
 		FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */; };
+		FB7848971CB6523D00C6E69D /* ZhDbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848961CB6523D00C6E69D /* ZhDbHelper.m */; };
+		FB7848C61CB6732600C6E69D /* ZhDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848C51CB6732600C6E69D /* ZhDBModel.m */; };
+		FB7848C91CB6742A00C6E69D /* ZhUserDbModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
 		FBA7F7B51C8D6DAB000C8119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B31C8D6DAB000C8119 /* Main.storyboard */; };
 		FBA7F7B71C8D6DAB000C8119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B61C8D6DAB000C8119 /* Assets.xcassets */; };
 		FBA7F7BA1C8D6DAB000C8119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7B81C8D6DAB000C8119 /* LaunchScreen.storyboard */; };
-		FBA7F7C51C8D6DAB000C8119 /* ZhGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */; };
-		FBA7F7D01C8D6DAB000C8119 /* ZhGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */; };
 		FBA7F7EB1C8D6DED000C8119 /* addMore.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7DE1C8D6DED000C8119 /* addMore.png */; };
 		FBA7F7EC1C8D6DED000C8119 /* btn_release@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */; };
 		FBA7F7ED1C8D6DED000C8119 /* btn_release@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */; };
@@ -188,6 +196,19 @@
 		FB206E581C8EAA8C009F7681 /* pd_sdk_dialog_pwd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pd_sdk_dialog_pwd@2x.png"; sourceTree = "<group>"; };
 		FB206E5F1C8EBB4B009F7681 /* ZhAuthUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhAuthUtilViewController.h; sourceTree = "<group>"; };
 		FB206E601C8EBB4B009F7681 /* ZhAuthUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhAuthUtilViewController.m; sourceTree = "<group>"; };
+		FB28345D1CB60A28005FF499 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		FB28345E1CB60A28005FF499 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		FB28345F1CB60A28005FF499 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		FB2834601CB60A28005FF499 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		FB2834611CB60A28005FF499 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		FB2834621CB60A28005FF499 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		FB2834631CB60A28005FF499 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		FB2834641CB60A28005FF499 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		FB2834651CB60A28005FF499 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		FB2834661CB60A28005FF499 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		FB2834671CB60A28005FF499 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FB2834681CB60A28005FF499 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2834721CB635B9005FF499 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FB38E32C1CAD1835007E7A00 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
 		FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
 		FB38E32E1CAD1835007E7A00 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
@@ -257,6 +278,12 @@
 		FB59BE1D1CA3EE4B00FD5EFA /* ZhPublicDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhPublicDef.m; sourceTree = "<group>"; };
 		FB6B58061CA9391B005B06C0 /* ZhMyselfService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhMyselfService.h; sourceTree = "<group>"; };
 		FB6B58071CA9391B005B06C0 /* ZhMyselfService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhMyselfService.m; sourceTree = "<group>"; };
+		FB7848951CB6523D00C6E69D /* ZhDbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhDbHelper.h; sourceTree = "<group>"; };
+		FB7848961CB6523D00C6E69D /* ZhDbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhDbHelper.m; sourceTree = "<group>"; };
+		FB7848C41CB6732600C6E69D /* ZhDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhDBModel.h; sourceTree = "<group>"; };
+		FB7848C51CB6732600C6E69D /* ZhDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhDBModel.m; sourceTree = "<group>"; };
+		FB7848C71CB6742A00C6E69D /* ZhUserDbModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserDbModel.h; sourceTree = "<group>"; };
+		FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserDbModel.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -268,11 +295,7 @@
 		FBA7F7B91C8D6DAB000C8119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBA7F7BB1C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA7F7C01C8D6DAB000C8119 /* ZhGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhGameTests.m; sourceTree = "<group>"; };
-		FBA7F7C61C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA7F7CB1C8D6DAB000C8119 /* ZhGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhGameUITests.m; sourceTree = "<group>"; };
-		FBA7F7D11C8D6DAB000C8119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA7F7DE1C8D6DED000C8119 /* addMore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addMore.png; sourceTree = "<group>"; };
 		FBA7F7DF1C8D6DED000C8119 /* btn_release@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@2x.png"; sourceTree = "<group>"; };
 		FBA7F7E01C8D6DED000C8119 /* btn_release@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_release@3x.png"; sourceTree = "<group>"; };
@@ -356,6 +379,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2834731CB635B9005FF499 /* libsqlite3.tbd in Frameworks */,
 				FB0BC5EF1C97C59A0014DA54 /* libz.tbd in Frameworks */,
 				FB0BC5ED1C97C55C0014DA54 /* libxml2.2.tbd in Frameworks */,
 				FB0BC5EA1C97C1590014DA54 /* CoreGraphics.framework in Frameworks */,
@@ -385,6 +409,7 @@
 		FB07B74A1C8D8CB200501747 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				FB28345C1CB60A28005FF499 /* FMDB */,
 				FBD8D9631CACD542003EA6A3 /* WebImage */,
 				FB59BDF21CA3ED4E00FD5EFA /* SBJson */,
 				FB59BDB41CA3DF7300FD5EFA /* HD */,
@@ -508,6 +533,25 @@
 				FB4398971CAB8109005E7B4E /* ViewController */,
 			);
 			path = "Login(登陆界面)";
+			sourceTree = "<group>";
+		};
+		FB28345C1CB60A28005FF499 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				FB28345D1CB60A28005FF499 /* FMDatabase.h */,
+				FB28345E1CB60A28005FF499 /* FMDatabase.m */,
+				FB28345F1CB60A28005FF499 /* FMDatabaseAdditions.h */,
+				FB2834601CB60A28005FF499 /* FMDatabaseAdditions.m */,
+				FB2834611CB60A28005FF499 /* FMDatabasePool.h */,
+				FB2834621CB60A28005FF499 /* FMDatabasePool.m */,
+				FB2834631CB60A28005FF499 /* FMDatabaseQueue.h */,
+				FB2834641CB60A28005FF499 /* FMDatabaseQueue.m */,
+				FB2834651CB60A28005FF499 /* FMDB.h */,
+				FB2834661CB60A28005FF499 /* FMResultSet.h */,
+				FB2834671CB60A28005FF499 /* FMResultSet.m */,
+				FB2834681CB60A28005FF499 /* Info.plist */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		FB43988E1CAB80E3005E7B4E /* service */ = {
@@ -662,10 +706,26 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		FB7848941CB6523D00C6E69D /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FB7848951CB6523D00C6E69D /* ZhDbHelper.h */,
+				FB7848961CB6523D00C6E69D /* ZhDbHelper.m */,
+				FB7848C41CB6732600C6E69D /* ZhDBModel.h */,
+				FB7848C51CB6732600C6E69D /* ZhDBModel.m */,
+				FB7848C71CB6742A00C6E69D /* ZhUserDbModel.h */,
+				FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */,
+			);
+			name = DBHelper;
+			path = ZhGame/DBHelper;
+			sourceTree = "<group>";
+		};
 		FBA7F79E1C8D6DAB000C8119 = {
 			isa = PBXGroup;
 			children = (
+				FB2834721CB635B9005FF499 /* libsqlite3.tbd */,
 				FB0BC5F41C97D3060014DA54 /* Framework */,
+				FB7848941CB6523D00C6E69D /* DBHelper */,
 				FBD8D9671CACD794003EA6A3 /* UserInfo */,
 				FB59BE1B1CA3EE4B00FD5EFA /* Config */,
 				FB0BC5F31C97D2E70014DA54 /* Utils */,
@@ -673,8 +733,6 @@
 				FBA7F7F81C8D6DF5000C8119 /* UI */,
 				FBA7F7DD1C8D6DED000C8119 /* images */,
 				FBA7F7A91C8D6DAB000C8119 /* ZhGame */,
-				FBA7F7C31C8D6DAB000C8119 /* ZhGameTests */,
-				FBA7F7CE1C8D6DAB000C8119 /* ZhGameUITests */,
 				FBA7F7A81C8D6DAB000C8119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -711,24 +769,6 @@
 				FBA7F7AB1C8D6DAB000C8119 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FBA7F7C31C8D6DAB000C8119 /* ZhGameTests */ = {
-			isa = PBXGroup;
-			children = (
-				FBA7F7C41C8D6DAB000C8119 /* ZhGameTests.m */,
-				FBA7F7C61C8D6DAB000C8119 /* Info.plist */,
-			);
-			path = ZhGameTests;
-			sourceTree = "<group>";
-		};
-		FBA7F7CE1C8D6DAB000C8119 /* ZhGameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FBA7F7CF1C8D6DAB000C8119 /* ZhGameUITests.m */,
-				FBA7F7D11C8D6DAB000C8119 /* Info.plist */,
-			);
-			path = ZhGameUITests;
 			sourceTree = "<group>";
 		};
 		FBA7F7DD1C8D6DED000C8119 /* images */ = {
@@ -1050,6 +1090,7 @@
 				FB206E3F1C8E80C7009F7681 /* logo.png in Resources */,
 				FBA7F7B51C8D6DAB000C8119 /* Main.storyboard in Resources */,
 				FBA7F7F21C8D6DED000C8119 /* tab_me_nor@2x.png in Resources */,
+				FB28346E1CB60A28005FF499 /* Info.plist in Resources */,
 				FBA7F7F11C8D6DED000C8119 /* tab_buddy_press@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,9 +1141,11 @@
 				FB59BE151CA3ED4E00FD5EFA /* SBJsonTokeniser.m in Sources */,
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
 				FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */,
+				FB28346B1CB60A28005FF499 /* FMDatabasePool.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
 				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,
+				FB7848971CB6523D00C6E69D /* ZhDbHelper.m in Sources */,
 				FB59BE171CA3ED4E00FD5EFA /* SBJsonWriter.m in Sources */,
 				FB206E611C8EBB4B009F7681 /* ZhAuthUtilViewController.m in Sources */,
 				FBA7F8451C8D6DF5000C8119 /* ZhRootViewController.m in Sources */,
@@ -1114,17 +1157,21 @@
 				FBD8D96A1CACD7A0003EA6A3 /* ZhUserInfo.m in Sources */,
 				FB59BE141CA3ED4E00FD5EFA /* SBJsonStreamWriterState.m in Sources */,
 				FBA7F8421C8D6DF5000C8119 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				FB2834691CB60A28005FF499 /* FMDatabase.m in Sources */,
 				FB59BE131CA3ED4E00FD5EFA /* SBJsonStreamWriterAccumulator.m in Sources */,
 				FBA7F83E1C8D6DF5000C8119 /* MASLayoutConstraint.m in Sources */,
 				FBA7F8441C8D6DF5000C8119 /* ViewController+MASAdditions.m in Sources */,
+				FB28346D1CB60A28005FF499 /* FMResultSet.m in Sources */,
 				FB59BE0F1CA3ED4E00FD5EFA /* SBJsonStreamParserAccumulator.m in Sources */,
 				FB59BDEE1CA3E2C700FD5EFA /* MMProgressHUDWindow.m in Sources */,
 				FBA7F83D1C8D6DF5000C8119 /* MASConstraintMaker.m in Sources */,
 				FB59BDEB1CA3E2C700FD5EFA /* MMProgressHUD+Class.m in Sources */,
 				FBA7F8341C8D6DF5000C8119 /* Zh1ViewController.m in Sources */,
 				FB0BC5F71C97D33E0014DA54 /* ZhStringUtils.m in Sources */,
+				FB28346A1CB60A28005FF499 /* FMDatabaseAdditions.m in Sources */,
 				FBA7F8361C8D6DF5000C8119 /* Zh3ViewController.m in Sources */,
 				FB0BC5E11C97BAFB0014DA54 /* ASINetworkQueue.m in Sources */,
+				FB7848C61CB6732600C6E69D /* ZhDBModel.m in Sources */,
 				FBFB1A311CAE1F2C00E4CFAF /* ZhUserCenterItemModel.m in Sources */,
 				FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */,
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
@@ -1137,6 +1184,7 @@
 				FB0BC5DF1C97BAFB0014DA54 /* ASIHTTPRequest.m in Sources */,
 				FBA7F8381C8D6DF5000C8119 /* Zh5TableViewController.m in Sources */,
 				FB4398A51CABBE18005E7B4E /* ZhCountBtn.m in Sources */,
+				FB28346C1CB60A28005FF499 /* FMDatabaseQueue.m in Sources */,
 				FB07B7581C8D8CB200501747 /* UIViewController+MMDrawerController.m in Sources */,
 				FB59BDED1CA3E2C700FD5EFA /* MMProgressHUDViewController.m in Sources */,
 				FB0BC5E21C97BAFB0014DA54 /* Reachability.m in Sources */,
@@ -1156,6 +1204,7 @@
 				FB59BDEA1CA3E2C700FD5EFA /* MMProgressHUD+Animations.m in Sources */,
 				FB59BE0E1CA3ED4E00FD5EFA /* SBJsonStreamParser.m in Sources */,
 				FBFB1A7E1CB3877800E4CFAF /* ZhHeaderModel.m in Sources */,
+				FB7848C91CB6742A00C6E69D /* ZhUserDbModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,7 +1212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA7F7C51C8D6DAB000C8119 /* ZhGameTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,7 +1219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA7F7D01C8D6DAB000C8119 /* ZhGameUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

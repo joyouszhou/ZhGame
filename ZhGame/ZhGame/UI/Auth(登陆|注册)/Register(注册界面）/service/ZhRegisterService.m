@@ -11,6 +11,8 @@
 #import "MMProgressHUD.h"
 #import "SBJson.h"
 #import "ZhPublicDef.h"
+#import "ZhUserInfo.h"
+#import "ZhDbHelper.h"
 @implementation ZhRegisterService
 
 #pragma mark - 注册－获取手机验证码功能
@@ -60,6 +62,15 @@
             [[NSUserDefaults standardUserDefaults]setObject:nickName forKey:ZH_LOACL_LOGIN_NICKNAME];
             //立刻保存信息
             [[NSUserDefaults standardUserDefaults] synchronize];
+            [ZhUserInfo shareInstance].userId =[rootDic objectForKey:@"userId"];
+            [ZhUserInfo shareInstance].userLoginName =username;
+            [ZhUserInfo shareInstance].userNickName =nickName;
+            [ZhUserInfo shareInstance].userSex =@"未知";
+            [ZhUserInfo shareInstance].userCreatetime =[rootDic objectForKey:@"registerDate"];
+            [ZhUserInfo shareInstance].userHead =headImage;
+            [ZhUserInfo shareInstance].userDes= @"";
+            [ZhUserInfo shareInstance].userToken =[rootDic objectForKey:@"apiKey"];
+            [[ZhDbHelper shareInstance] saveLoginInfo:YES];
             completeBlock(YES);
         }
         else

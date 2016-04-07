@@ -269,8 +269,6 @@
     NSLog(@"注册");
     NSLog(@"上传图片");
     
-    
-    
     [self.registBtn setEnabled:NO];
     [self.registBtn setBackgroundColor:[UIColor purpleColor]];
     

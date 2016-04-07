@@ -11,6 +11,8 @@
 #import "MMProgressHUD.h"
 #import "SBJson.h"
 #import "ZhPublicDef.h"
+#import "ZhUserInfo.h"
+#import "ZhDbHelper.h"
 
 @implementation ZhLoginService
 
@@ -34,7 +36,7 @@
     [MMProgressHUD showWithTitle:@"开始登陆" status:@"登陆中..." ];
     [request setCompletionBlock:^{
         SBJsonParser *paser=[[SBJsonParser alloc]init];
-        NSLog(@"%@",request.responseString);
+        NSLog(@"%s",[request.responseString UTF8String]);
         NSDictionary *rootDic=[paser objectWithString:request.responseString];
         int status=[[rootDic objectForKey:@"status"]intValue];
         if (status==1) {
@@ -48,6 +50,19 @@
             [[NSUserDefaults standardUserDefaults]setObject:loginName forKey:ZH_LOACL_LOGIN_NAME];
             //立刻保存信息
             [[NSUserDefaults standardUserDefaults]synchronize];
+            
+            
+            [ZhUserInfo shareInstance].userId =[userDic objectForKey:@"userId"];
+            [ZhUserInfo shareInstance].userLoginName =loginName;
+            [ZhUserInfo shareInstance].userNickName =[userDic objectForKey:@"nickName"];
+            [ZhUserInfo shareInstance].userSex =@"未知";
+            [ZhUserInfo shareInstance].userCreatetime =[userDic objectForKey:@"registerDate"];
+            [ZhUserInfo shareInstance].userHead =[userDic objectForKey:@"userHead"];
+            [ZhUserInfo shareInstance].userDes= @"";
+            [ZhUserInfo shareInstance].userToken =[rootDic objectForKey:@"apiKey"];
+            [[ZhDbHelper shareInstance] saveLoginInfo:YES];
+            
+            
             response(true);
             
         }

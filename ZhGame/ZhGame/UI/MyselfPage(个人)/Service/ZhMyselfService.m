@@ -67,7 +67,7 @@
                     sexStr=@"暂无资料";
                     break;
             }
-
+            
             
             [ZhUserInfo shareInstance].userHead     = [userDic objectForKey:@"userHead"];
             [ZhUserInfo shareInstance].userNickName = [userDic objectForKey:@"nickName"];

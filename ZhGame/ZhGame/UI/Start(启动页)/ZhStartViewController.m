@@ -74,7 +74,7 @@
 
 -(void)doCloseView
 {
-    [[ZhMainViewManager shareInstance] showMainView];
+    [[ZhMainViewManager shareInstance] doShowLoginView];
 }
 
 -(NSData *)loadImageData
@@ -140,7 +140,7 @@
 -(void)ZhCountBtnFinish
 {
      // 完成，需要进行显示主页
-    [[ZhMainViewManager shareInstance] showMainView];
+    [[ZhMainViewManager shareInstance] doShowLoginView];
 }
 
 @end

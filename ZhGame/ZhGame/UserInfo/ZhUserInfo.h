@@ -22,6 +22,8 @@
 @property (nonatomic, strong)   NSString                    *userSex;
 @property (nonatomic, strong)   NSString                    *userDes;
 @property (nonatomic, strong)   NSString                    *userCreatetime;
+@property (nonatomic, strong)   NSString                    *userId;
+@property (nonatomic, strong)   NSString                    *userToken;
 
 
 @end
