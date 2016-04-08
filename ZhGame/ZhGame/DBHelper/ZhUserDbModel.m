@@ -8,6 +8,18 @@
 
 #import "ZhUserDbModel.h"
 
+@interface ZhUserDbModel ()
+
+@property (nonatomic, copy) NSString *duty;
+
+@end
+
 @implementation ZhUserDbModel
+
+
++(NSArray *)transients
+{
+    return [NSArray arrayWithObjects:@"field1",@"field2",nil];
+}
 
 @end

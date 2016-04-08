@@ -5,7 +5,7 @@
 //  Created by zhouhuan on 16/4/7.
 //  Copyright © 2016年 zhouhuan. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "ZhDBModel.h"
 
 @interface ZhUserDbModel : ZhDBModel

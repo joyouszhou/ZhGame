@@ -79,6 +79,7 @@
 		FB7848971CB6523D00C6E69D /* ZhDbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848961CB6523D00C6E69D /* ZhDbHelper.m */; };
 		FB7848C61CB6732600C6E69D /* ZhDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848C51CB6732600C6E69D /* ZhDBModel.m */; };
 		FB7848C91CB6742A00C6E69D /* ZhUserDbModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */; };
+		FB7848CC1CB74D7400C6E69D /* ZhUserDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7848CB1CB74D7400C6E69D /* ZhUserDbManager.m */; };
 		FBA7F7AC1C8D6DAB000C8119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AB1C8D6DAB000C8119 /* main.m */; };
 		FBA7F7AF1C8D6DAB000C8119 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7AE1C8D6DAB000C8119 /* AppDelegate.m */; };
 		FBA7F7B21C8D6DAB000C8119 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7F7B11C8D6DAB000C8119 /* ViewController.m */; };
@@ -284,6 +285,8 @@
 		FB7848C51CB6732600C6E69D /* ZhDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhDBModel.m; sourceTree = "<group>"; };
 		FB7848C71CB6742A00C6E69D /* ZhUserDbModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserDbModel.h; sourceTree = "<group>"; };
 		FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserDbModel.m; sourceTree = "<group>"; };
+		FB7848CA1CB74D7400C6E69D /* ZhUserDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhUserDbManager.h; sourceTree = "<group>"; };
+		FB7848CB1CB74D7400C6E69D /* ZhUserDbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhUserDbManager.m; sourceTree = "<group>"; };
 		FBA7F7A71C8D6DAB000C8119 /* ZhGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA7F7AB1C8D6DAB000C8119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBA7F7AD1C8D6DAB000C8119 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -715,6 +718,8 @@
 				FB7848C51CB6732600C6E69D /* ZhDBModel.m */,
 				FB7848C71CB6742A00C6E69D /* ZhUserDbModel.h */,
 				FB7848C81CB6742A00C6E69D /* ZhUserDbModel.m */,
+				FB7848CA1CB74D7400C6E69D /* ZhUserDbManager.h */,
+				FB7848CB1CB74D7400C6E69D /* ZhUserDbManager.m */,
 			);
 			name = DBHelper;
 			path = ZhGame/DBHelper;
@@ -1142,6 +1147,7 @@
 				FBA7F83B1C8D6DF5000C8119 /* MASCompositeConstraint.m in Sources */,
 				FB6B58081CA9391B005B06C0 /* ZhMyselfService.m in Sources */,
 				FB28346B1CB60A28005FF499 /* FMDatabasePool.m in Sources */,
+				FB7848CC1CB74D7400C6E69D /* ZhUserDbManager.m in Sources */,
 				FBA7F8371C8D6DF5000C8119 /* Zh4ViewController.m in Sources */,
 				FBA7F8401C8D6DF5000C8119 /* MASViewConstraint.m in Sources */,
 				FBA7F8351C8D6DF5000C8119 /* Zh2ViewController.m in Sources */,

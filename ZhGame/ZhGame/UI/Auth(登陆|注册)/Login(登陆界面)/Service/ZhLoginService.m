@@ -12,7 +12,7 @@
 #import "SBJson.h"
 #import "ZhPublicDef.h"
 #import "ZhUserInfo.h"
-#import "ZhDbHelper.h"
+#import "ZhUserDbManager.h"
 
 @implementation ZhLoginService
 
@@ -60,7 +60,7 @@
             [ZhUserInfo shareInstance].userHead =[userDic objectForKey:@"userHead"];
             [ZhUserInfo shareInstance].userDes= @"";
             [ZhUserInfo shareInstance].userToken =[rootDic objectForKey:@"apiKey"];
-            [[ZhDbHelper shareInstance] saveLoginInfo:YES];
+            [[ZhUserDbManager shareInstance] saveUserLoginMsg:YES];
             
             
             response(true);

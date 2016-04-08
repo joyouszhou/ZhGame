@@ -11,6 +11,7 @@
 #import "Masonry.h"
 #import "ZhCountBtn.h"
 #import "ZhMainViewManager.h"
+#import "ZhUserDbManager.h"
 
 @interface ZhStartViewController ()<ZhCountBtnDeleget>
 @property (nonatomic, strong)           UIImageView             *backgroundImageView;       //背景图片
@@ -74,7 +75,13 @@
 
 -(void)doCloseView
 {
-    [[ZhMainViewManager shareInstance] doShowLoginView];
+    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+        [[ZhMainViewManager shareInstance] doShowTabbarView];
+    }
+    else
+    {
+        [[ZhMainViewManager shareInstance] doShowLoginView];
+    }
 }
 
 -(NSData *)loadImageData
@@ -139,8 +146,13 @@
 }
 -(void)ZhCountBtnFinish
 {
-     // 完成，需要进行显示主页
-    [[ZhMainViewManager shareInstance] doShowLoginView];
+    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+        [[ZhMainViewManager shareInstance] doShowTabbarView];
+    }
+    else
+    {
+        [[ZhMainViewManager shareInstance] doShowLoginView];
+    }
 }
 
 @end
