@@ -44,6 +44,7 @@
 		FB38E3321CAD1835007E7A00 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32D1CAD1835007E7A00 /* RDVTabBar.m */; };
 		FB38E3331CAD1835007E7A00 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */; };
 		FB38E3341CAD1835007E7A00 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */; };
+		FB3D43401CBB4AAB00C9CF8A /* ZhStartService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3D433F1CBB4AAB00C9CF8A /* ZhStartService.m */; };
 		FB4398941CAB80E3005E7B4E /* ZhRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */; };
 		FB4398951CAB80E3005E7B4E /* ZhRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398931CAB80E3005E7B4E /* ZhRegisterViewController.m */; };
 		FB43989A1CAB8109005E7B4E /* ZhLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4398991CAB8109005E7B4E /* ZhLoginViewController.m */; };
@@ -216,6 +217,8 @@
 		FB38E32F1CAD1835007E7A00 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		FB38E3301CAD1835007E7A00 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
 		FB38E3311CAD1835007E7A00 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		FB3D433E1CBB4AAB00C9CF8A /* ZhStartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhStartService.h; sourceTree = "<group>"; };
+		FB3D433F1CBB4AAB00C9CF8A /* ZhStartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhStartService.m; sourceTree = "<group>"; };
 		FB43988F1CAB80E3005E7B4E /* ZhRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterService.h; sourceTree = "<group>"; };
 		FB4398901CAB80E3005E7B4E /* ZhRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhRegisterService.m; sourceTree = "<group>"; };
 		FB4398921CAB80E3005E7B4E /* ZhRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhRegisterViewController.h; sourceTree = "<group>"; };
@@ -598,6 +601,8 @@
 			children = (
 				FB43989F1CABBAE1005E7B4E /* ZhStartViewController.h */,
 				FB4398A01CABBAE1005E7B4E /* ZhStartViewController.m */,
+				FB3D433E1CBB4AAB00C9CF8A /* ZhStartService.h */,
+				FB3D433F1CBB4AAB00C9CF8A /* ZhStartService.m */,
 			);
 			path = "Start(启动页)";
 			sourceTree = "<group>";
@@ -1183,6 +1188,7 @@
 				FB07B7561C8D8CB200501747 /* MMDrawerController.m in Sources */,
 				FBA7F8411C8D6DF5000C8119 /* NSArray+MASAdditions.m in Sources */,
 				FB0BC5E01C97BAFB0014DA54 /* ASIInputStream.m in Sources */,
+				FB3D43401CBB4AAB00C9CF8A /* ZhStartService.m in Sources */,
 				FBA7F83F1C8D6DF5000C8119 /* MASViewAttribute.m in Sources */,
 				FB4398951CAB80E3005E7B4E /* ZhRegisterViewController.m in Sources */,
 				FB0BC5DD1C97BAFB0014DA54 /* ASIDownloadCache.m in Sources */,

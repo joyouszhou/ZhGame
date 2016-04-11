@@ -37,7 +37,7 @@
 }
 -(void)setBadgeValue:(NSUInteger)badgeValue{
     _badgeValue = badgeValue;
-    self.badgeValueLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)_badgeValue];
+    self.badgeValueLabel.text = [NSString stringWithFormat:@"%lu | 继续",(unsigned long)_badgeValue];
 }
 - (void)alignmentTop{
     

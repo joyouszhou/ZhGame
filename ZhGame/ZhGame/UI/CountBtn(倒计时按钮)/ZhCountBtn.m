@@ -21,27 +21,26 @@
 }
 
 - (void)scale:(ZhCountBtnSetting*)setting {
-    self.titleLabel.transform = CGAffineTransformMakeScale(1, 1);
-    self.titleLabel.alpha     = 1;
+    self.layer.cornerRadius =  10;
     [self setTitleColor:setting.colorTitle ? setting.colorTitle : [UIColor whiteColor] forState:UIControlStateNormal];
     [self setTitleColor:setting.colorTitle ? setting.colorTitle : [UIColor whiteColor] forState:UIControlStateDisabled];
     if (setting.indexStart > 0)
     {
         self.backgroundColor = setting.colorDisable ? setting.colorDisable : [UIColor lightGrayColor];
-//        [self setEnabled:NO];
-        NSString* title = [NSString stringWithFormat:@"   %@%d%@   ",(setting.strPrefix ? setting.strPrefix : @"关闭"),setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
+        NSString* title = [NSString stringWithFormat:@"  %ds|%@ ",setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
         NSLog(@"%@",title);
+        
         [self setTitle:title forState:UIControlStateNormal];
         [self setTitle:title forState:UIControlStateDisabled];
-
-        __weak typeof (self) wSelf = self;
-        [UIView animateWithDuration:1 animations:^{
-            self.titleLabel.transform = CGAffineTransformMakeScale(1.2, 1.2);
-            self.titleLabel.alpha     = 0.0;
-        } completion:^(BOOL b){
+        
+        __block ZhCountBtn/*主控制器*/ *weakSelf = self;
+        
+        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0/*延迟执行时间*/ * NSEC_PER_SEC));
+        
+        dispatch_after(delayTime, dispatch_get_main_queue(), ^{
             setting.indexStart--;
-            [wSelf scale:setting];
-        }];
+            [weakSelf scale:setting];
+        });
     }
     else {
         self.backgroundColor = setting.colorCommon ? setting.colorCommon : [UIColor redColor];
@@ -61,7 +60,6 @@
  */
 - (void)startWithSetting:(ZhCountBtnSetting *)setting {
     [self scale:setting];
-    
 }
 
 @end

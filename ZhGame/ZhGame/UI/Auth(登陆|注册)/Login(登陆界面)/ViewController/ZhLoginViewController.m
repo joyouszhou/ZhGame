@@ -14,18 +14,17 @@
 #import "ZhMainViewManager.h"
 
 @interface ZhLoginViewController ()
-@property (nonatomic, strong) UIImageView           *AccountLogo;                   //头像
-@property (nonatomic, strong) IBOutlet UITextField           *txtUserId;                     //账号输入框
-@property (nonatomic, strong) IBOutlet UITextField           *txtPassword;                   //密码输入框
-@property (nonatomic, strong) IBOutlet UIButton              *ShowPasswordBtn;               //显示密码按钮
-@property (nonatomic, strong) IBOutlet UIButton              *loginBtn;                      //登陆按钮
-@property (nonatomic, strong) IBOutlet UIButton              *forgetPasswordBtn;             //忘记密码按钮
-@property (nonatomic, strong) UILabel               *copyrightLabel;                //官网显示
-@property (nonatomic, strong) UIView                *lineView;                      //官网显示上边的线
-@property (nonatomic, strong) UIButton              *registerBtn;                   //注册按钮
-
-@property (nonatomic, assign) BOOL                  bLoginName;                     //用户名是否正确
-@property (nonatomic, assign) BOOL                  bpassword;                      //密码是否支持
+@property (nonatomic, strong) UIImageView                   *AccountLogo;                   //头像
+@property (nonatomic, strong) IBOutlet UITextField          *txtUserId;                     //账号输入框
+@property (nonatomic, strong) IBOutlet UITextField          *txtPassword;                   //密码输入框
+@property (nonatomic, strong) IBOutlet UIButton             *ShowPasswordBtn;               //显示密码按钮
+@property (nonatomic, strong) IBOutlet UIButton             *loginBtn;                      //登陆按钮
+@property (nonatomic, strong) IBOutlet UIButton             *forgetPasswordBtn;             //忘记密码按钮
+@property (nonatomic, strong) UILabel                       *copyrightLabel;                //官网显示
+@property (nonatomic, strong) UIView                        *lineView;                      //官网显示上边的线
+@property (nonatomic, strong) UIButton                      *registerBtn;                   //注册按钮
+@property (nonatomic, assign) BOOL                          bLoginName;                     //用户名是否正确
+@property (nonatomic, assign) BOOL                          bpassword;                      //密码是否支持
 
 @end
 

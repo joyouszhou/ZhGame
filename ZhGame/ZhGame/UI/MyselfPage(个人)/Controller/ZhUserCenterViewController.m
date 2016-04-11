@@ -80,12 +80,12 @@
     ZhUserCenterItemModel *item4 = [[ZhUserCenterItemModel alloc]init];
     item4.titleName = @"注册时间";
     item4.accessoryType = ZhSettingAccessoryTypeNone;
-
+    
     ZhUserCenterSectionModel *section4 = [[ZhUserCenterSectionModel alloc]init];
     section4.sectionHeaderHeight = 5;
     section4.itemArray = @[item4];
     self.sectionArray = @[section1,section2,section3,section4];
-
+    
     if (!self.infoService) {
         self.infoService = [[ZhMyselfService alloc] init];
     }
@@ -94,11 +94,15 @@
     
     ZhHeaderModel *info =  [[ZhHeaderModel alloc] init];
     
-   
+    
     _userHeaderView= [[ZhUserHeaderView alloc] init];
     _userHeaderView.frame = CGRectMake(0, 0, self.view.frame.size.width, 200);
     _userHeaderView.info = info;
     _userHeaderView.delegate = self;
+    
+    
+    
+    
     [self.infoService ZhGetLoginStats:^(BOOL isLogin, NSString *title) {
         if (isLogin) {
             [self.infoService ZhGetUserInfo:^(BOOL isLogin, NSString *title) {

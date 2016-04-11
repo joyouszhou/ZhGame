@@ -12,16 +12,29 @@
 #import "ZhCountBtn.h"
 #import "ZhMainViewManager.h"
 #import "ZhUserDbManager.h"
+#import "UIImageView+ZhWebImage.h"
+#import "ZhStartService.h"
+
+
 
 @interface ZhStartViewController ()<ZhCountBtnDeleget>
 @property (nonatomic, strong)           UIImageView             *backgroundImageView;       //背景图片
 @property (nonatomic, strong)           ZhCountBtn              *CloseBtn;                  //关闭按钮
+@property (nonatomic, assign)           BOOL                    bDBUserFlag;                //数据库初始化方法结果
+@property (nonatomic, strong)           ZhStartService          *service;                   //服务
 @end
 
 @implementation ZhStartViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    self.service = [[ZhStartService alloc] init];
+    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+        self.bDBUserFlag = true;
+        [self.service ZhStartLogin];
+    }
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.backgroundImageView];
     [self.backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -40,12 +53,18 @@
     }];
     ZhCountBtnSetting* setting = [[ZhCountBtnSetting alloc] init];
     setting.strPrefix = @"";
-    setting.strSuffix = @"";
-    setting.strCommon = @"关闭";
+    setting.strSuffix = @"跳过";
+    setting.strCommon = @"";
     setting.indexStart = 4;
-    setting.colorDisable = [UIColor grayColor];
-    setting.colorTitle =[UIColor whiteColor];
+    setting.colorDisable = [UIColor whiteColor];
+    setting.colorTitle =[UIColor blackColor];
+    self.bDBUserFlag = false;
     [_CloseBtn startWithSetting:setting];
+    self.service = [[ZhStartService alloc] init];
+    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+        self.bDBUserFlag = true;
+        [self.service ZhStartLogin];
+    }
 }
 
 -(UIImageView *)backgroundImageView
@@ -54,8 +73,9 @@
         return _backgroundImageView;
     }
     _backgroundImageView = [[UIImageView alloc] init];
-    UIImage *image = [[UIImage alloc] initWithData:[self loadImageData]];
-    _backgroundImageView.image = image;
+    UIImageView * imagehead = [[UIImageView alloc] init];
+    [imagehead setWebImage:API_IMAGER_URL(@"start.png") placeHolder:[UIImage imageNamed:@"startImage.png"] downloadFlag:100];
+    _backgroundImageView.image = imagehead.image;
     
     return _backgroundImageView;
 }
@@ -75,7 +95,7 @@
 
 -(void)doCloseView
 {
-    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+    if (self.bDBUserFlag) {
         [[ZhMainViewManager shareInstance] doShowTabbarView];
     }
     else
@@ -83,47 +103,6 @@
         [[ZhMainViewManager shareInstance] doShowLoginView];
     }
 }
-
--(NSData *)loadImageData
-{
-    //查询是否有catch目录
-    NSString *catchDir = [self getCatchDir];
-    if (catchDir  == nil && catchDir.length<=0) {
-        return nil;
-    }
-    //判断当前catch目录下是否有文件
-    NSString * imageFile = [catchDir stringByAppendingPathComponent:@"startimage.png"];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:imageFile]) {
-        _imgaeDate = [NSData dataWithContentsOfFile:imageFile];
-    }
-    else
-    {
-        UIImage *imageloacl =[UIImage imageNamed:@"startImage.png"];
-        _imgaeDate = UIImagePNGRepresentation(imageloacl);//如果本地缓存没有，保存图片
-        if (_imgaeDate) {
-            [[NSFileManager defaultManager] createFileAtPath:imageFile contents:_imgaeDate attributes:nil];
-            [_imgaeDate writeToFile:imageFile atomically:YES];
-        }
-    }
-    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
-    NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(downloadImage:) object:imageFile];
-    [operationQueue addOperation:op];
-    return _imgaeDate;
-}
-//下载图片
-- (void)downloadImage:(NSString *)imageDir;
-{
-
-    NSData *imagedata = [NSData dataWithContentsOfURL:API_IMAGER_URL(@"start.png")]; //如果本地缓存没有，保存图片
-    if (imagedata) {
-        if ([[NSFileManager defaultManager] fileExistsAtPath:imageDir])
-        {
-            [[NSFileManager defaultManager] removeItemAtPath:imageDir error:nil];
-            [imagedata writeToFile:imageDir atomically:YES];
-        }
-    }
-}
-
 
 #pragma mark - 获取图片存储目录
 /**
@@ -146,7 +125,7 @@
 }
 -(void)ZhCountBtnFinish
 {
-    if ([[ZhUserDbManager shareInstance] getUserInfo]) {
+    if (self.bDBUserFlag) {
         [[ZhMainViewManager shareInstance] doShowTabbarView];
     }
     else
